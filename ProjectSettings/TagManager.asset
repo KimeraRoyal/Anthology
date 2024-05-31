@@ -12,11 +12,11 @@ TagManager:
   - Water
   - UI
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - IP1.Collision
+  - IP1.Interactable
+  - IP1.Interactor
+  - IP1.Paper
+  - IP1.Shadow
   - 
   - 
   - 
@@ -40,4 +40,13 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 3877162515
+    locked: 0
+  - name: Elements
+    uniqueID: 1790043719
+    locked: 0
+  - name: Foreground
+    uniqueID: 4196356407
     locked: 0

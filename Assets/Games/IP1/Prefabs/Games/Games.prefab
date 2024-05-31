@@ -1,0 +1,112 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7812463331744224978
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3359016010950577436}
+  - component: {fileID: 8241027362274592518}
+  - component: {fileID: 6050777276910281360}
+  m_Layer: 0
+  m_Name: Games
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3359016010950577436
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7812463331744224978}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8241027362274592518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7812463331744224978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5af3377704220746a9d62351b1e0379, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_states:
+  - m_id: pill_box
+    m_microgame: {fileID: 57792552691149146, guid: be8ec81b60e6938489c16481ca7d724f, type: 3}
+    m_splashDetails: {fileID: 11400000, guid: b675f0631d53f8044b8657880e3dc0d0, type: 2}
+    m_selector: {fileID: 11400000, guid: 27fd606c06f968f43af221e0f3b1be81, type: 2}
+  - m_id: pill_sheet
+    m_microgame: {fileID: 2190425890722791423, guid: 0a784a2ff79c25f46994ca53b33c6822, type: 3}
+    m_splashDetails: {fileID: 0}
+    m_selector: {fileID: 11400000, guid: e02b9c37eebd228479be0de1722d83ab, type: 2}
+  - m_id: pill_swallow
+    m_microgame: {fileID: 9123644605042863876, guid: b201c8930d9e2bc42ae658596ae61fb3, type: 3}
+    m_splashDetails: {fileID: 0}
+    m_selector: {fileID: 11400000, guid: 60dbfa52c21e1f84eaae6105807424da, type: 2}
+  - m_id: door
+    m_microgame: {fileID: 3649456300252217975, guid: dc24f4bf49aec1147935285964c44311, type: 3}
+    m_splashDetails: {fileID: 0}
+    m_selector: {fileID: 11400000, guid: f6b61ca66403f7549b8be19966bf382d, type: 2}
+  - m_id: breakfast
+    m_microgame: {fileID: 7192635828808388355, guid: 2665b4281fdd0f3409f4ed92ae56a1bf, type: 3}
+    m_splashDetails: {fileID: 11400000, guid: 14f1c3d8e14539443b833aa298a31bf7, type: 2}
+    m_selector: {fileID: 11400000, guid: 55ea5c3c777b8c14f87e2c06f49d2871, type: 2}
+  - m_id: lunch
+    m_microgame: {fileID: 7079845386353276851, guid: 0dca41dd4b8c5ea478e8ce3d880617d5, type: 3}
+    m_splashDetails: {fileID: 0}
+    m_selector: {fileID: 11400000, guid: e8d5436b420acc7458b74e365a21f517, type: 2}
+  - m_id: work
+    m_microgame: {fileID: 328701616836248466, guid: 60b4e07c92d9f4b429917487a009ae93, type: 3}
+    m_splashDetails: {fileID: 0}
+    m_selector: {fileID: 11400000, guid: 1bf7017ebdeee184fb0640c7aa0192ae, type: 2}
+  - m_id: weekend
+    m_microgame: {fileID: 9082119507912661569, guid: cbad0ef8d4823c34491f6704857f76b2, type: 3}
+    m_splashDetails: {fileID: 11400000, guid: ca9d3817e2972254983b79cd5cfafc32, type: 2}
+    m_selector: {fileID: 11400000, guid: 07ba0e0581b6eb543928d56dbed7c4c8, type: 2}
+  - m_id: waiting_room
+    m_microgame: {fileID: 1603438247638720837, guid: 13d8364e7f4aef44a9f62e1035143831, type: 3}
+    m_splashDetails: {fileID: 11400000, guid: 0d1753cfaf4ceb241a43c284fb1e0330, type: 2}
+    m_selector: {fileID: 11400000, guid: c2205d01914e4884fb7acf0b4718143d, type: 2}
+  - m_id: end_of_day
+    m_microgame: {fileID: 3595042710384623632, guid: fdf186c9028455d479d4450993938e24, type: 3}
+    m_splashDetails: {fileID: 0}
+    m_selector: {fileID: 11400000, guid: 733e7c8a4cde3f6438e703f874148dfb, type: 2}
+  m_firstGame: pill_box
+  m_loadTime: 0.5
+  m_splashTime: 2.5
+--- !u!114 &6050777276910281360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7812463331744224978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f7136904293f454db8880c75b3e5d8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_daysInWeek: 5
+  m_currentDay: 0
+  m_prescriptionAmount: 3
+  m_pillsPopped: 00000000000000000000000000000000000000000000000000000000
+  m_sheetsPerBox: 2
+  m_sheetsRemaining: 0
+  m_paperStackSize: 0
+  m_baseHungriness: 2
+  m_hungriness: 2
