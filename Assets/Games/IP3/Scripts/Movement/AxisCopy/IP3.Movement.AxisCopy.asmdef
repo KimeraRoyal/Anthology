@@ -1,0 +1,16 @@
+{
+    "name": "IP3.Movement.AxisCopy",
+    "rootNamespace": "IP3",
+    "references": [
+        "GUID:e0685e27f9c39dd4192ae1d209ba5b37"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

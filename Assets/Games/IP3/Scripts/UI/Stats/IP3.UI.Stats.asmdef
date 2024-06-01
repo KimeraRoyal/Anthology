@@ -1,0 +1,18 @@
+{
+    "name": "IP3.UI.Stats",
+    "rootNamespace": "",
+    "references": [
+        "GUID:a3fdd4345d987b64f87df4cf7e955b19",
+        "GUID:62c0d9a52ee6bfa408e8a94a42994f01",
+        "GUID:6055be8ebefd69e48b49212b09b47b2f"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

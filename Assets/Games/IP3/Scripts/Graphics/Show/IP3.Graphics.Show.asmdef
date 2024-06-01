@@ -1,0 +1,17 @@
+{
+    "name": "IP3.Graphics.Show",
+    "rootNamespace": "IP3",
+    "references": [
+        "GUID:9f3dfb24bf069d94f96c950daad2d7db",
+        "GUID:063adf5df533b5444bda78160dd51abe"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

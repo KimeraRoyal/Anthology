@@ -1,0 +1,119 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce7410a3bd787db4fb10a1c8b5a52cd2, type: 3}
+  m_Name: Stats
+  m_EditorClassIdentifier: 
+  m_stats:
+  - m_name: Coolness
+    m_startingValue: 0
+    m_min: 0
+    m_max: 5
+  - m_name: Cuteness
+    m_startingValue: 0
+    m_min: 0
+    m_max: 5
+  - m_name: Suaveness
+    m_startingValue: 0
+    m_min: 0
+    m_max: 5
+  - m_name: Edginess
+    m_startingValue: 0
+    m_min: 0
+    m_max: 5
+  - m_name: Professionality
+    m_startingValue: 0
+    m_min: 0
+    m_max: 5
+  - m_name: Experimentation
+    m_startingValue: 0
+    m_min: 0
+    m_max: 1
+  - m_name: Exposed Feet
+    m_startingValue: 2
+    m_min: 0
+    m_max: 2
+  - m_name: Protection from Sun
+    m_startingValue: 0
+    m_min: 0
+    m_max: 100
+  - m_name: Leather
+    m_startingValue: 0
+    m_min: 0
+    m_max: 100
+  - m_name: Warmness
+    m_startingValue: 0
+    m_min: 0
+    m_max: 20
+  - m_name: Flirtiness
+    m_startingValue: 0
+    m_min: 0
+    m_max: 5
+  - m_name: Teeth
+    m_startingValue: 32
+    m_min: 0
+    m_max: 83
+  - m_name: Nimbleness
+    m_startingValue: 5
+    m_min: 0
+    m_max: 5
+  - m_name: Accessorization
+    m_startingValue: 0
+    m_min: 0
+    m_max: 10
+  - m_name: Whimsy
+    m_startingValue: 0
+    m_min: 0
+    m_max: 100
+  - m_name: Gender Presentation
+    m_startingValue: 1
+    m_min: 0
+    m_max: 13
+  - m_name: Grocery Store Admirers
+    m_startingValue: 1
+    m_min: 0
+    m_max: 50
+  - m_name: Goblins Sighted
+    m_startingValue: 0
+    m_min: 0
+    m_max: 100
+  - m_name: Discomfort
+    m_startingValue: 0
+    m_min: 0
+    m_max: 1
+  - m_name: Comprehension
+    m_startingValue: 0
+    m_min: 0
+    m_max: 0
+  - m_name: Adherance
+    m_startingValue: 0
+    m_min: 0
+    m_max: 10
+  - m_name: Aptitude
+    m_startingValue: 0
+    m_min: 0
+    m_max: 20
+  - m_name: Legality
+    m_startingValue: 0
+    m_min: 0
+    m_max: 1
+  - m_name: Symmetry
+    m_startingValue: 0
+    m_min: 0
+    m_max: 1
+  - m_name: Balance
+    m_startingValue: 0.5
+    m_min: 0
+    m_max: 1
+  - m_name: Likelihood of Getting Tattoo
+    m_startingValue: 0
+    m_min: 0
+    m_max: 100

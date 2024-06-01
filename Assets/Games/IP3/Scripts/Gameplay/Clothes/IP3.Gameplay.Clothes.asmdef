@@ -1,0 +1,18 @@
+{
+    "name": "IP3.Gameplay.Clothes",
+    "rootNamespace": "IP3",
+    "references": [
+        "GUID:7373977136cea3d4aa3f9821ed1a16f7",
+        "GUID:e0685e27f9c39dd4192ae1d209ba5b37",
+        "GUID:62c0d9a52ee6bfa408e8a94a42994f01"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

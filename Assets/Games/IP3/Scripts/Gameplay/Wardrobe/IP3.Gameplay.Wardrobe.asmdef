@@ -1,0 +1,16 @@
+{
+    "name": "IP3.Gameplay.Wardrobe",
+    "rootNamespace": "IP3",
+    "references": [
+        "GUID:15aa5415be3257148b30631d46f086a0"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

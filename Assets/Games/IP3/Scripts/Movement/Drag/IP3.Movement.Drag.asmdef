@@ -1,0 +1,18 @@
+{
+    "name": "IP3.Movement.Drag",
+    "rootNamespace": "IP3",
+    "references": [
+        "GUID:7373977136cea3d4aa3f9821ed1a16f7",
+        "GUID:e0685e27f9c39dd4192ae1d209ba5b37",
+        "GUID:8fb78c161ac0de94d9ec0f2d36e7b1f0"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,16 @@
+{
+    "name": "IP3.Movement",
+    "rootNamespace": "IP3",
+    "references": [
+        "GUID:bab8254f9948dc648924f0e566d3b7bd"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
