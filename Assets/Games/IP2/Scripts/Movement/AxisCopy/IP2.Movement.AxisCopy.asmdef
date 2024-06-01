@@ -1,0 +1,16 @@
+{
+    "name": "IP2.Movement.AxisCopy",
+    "rootNamespace": "IP2",
+    "references": [
+        "GUID:ff853533eb87b6249a9c964729953193"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,18 @@
+{
+    "name": "IP2.Character",
+    "rootNamespace": "IP2",
+    "references": [
+        "GUID:2c8684226d6d11a4cb498a1f7524acc4",
+        "GUID:43311eb777d830545892126f1fedd802",
+        "GUID:e49aee04cf179ad4aa8f182aedc22efc"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

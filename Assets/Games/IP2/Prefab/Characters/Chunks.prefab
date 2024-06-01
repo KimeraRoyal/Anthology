@@ -1,0 +1,174 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8666838575912434918
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9023931065822157102}
+  - component: {fileID: 6410676984630793012}
+  - component: {fileID: 4287567618295908885}
+  - component: {fileID: 3981895126654185290}
+  - component: {fileID: 6416961979852621908}
+  - component: {fileID: 4742077379958013251}
+  - component: {fileID: 6640557799042268021}
+  m_Layer: 0
+  m_Name: Chunks
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9023931065822157102
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8666838575912434918}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6410676984630793012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8666838575912434918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: def192b6bb474e747921e4cab9b91579, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_chunkPrefab: {fileID: 8236722068824137572, guid: f334f01634bd8f04a97b53bfed1401d8, type: 3}
+  m_chunkCount: {x: 5, y: 5}
+--- !u!114 &4287567618295908885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8666838575912434918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cedd89c08b87da4d97cdaac2bbc27fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_moverObject: {fileID: 0}
+--- !u!114 &3981895126654185290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8666838575912434918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b5098537a454d744bf5162550ad4954, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6416961979852621908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8666838575912434918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee6895b54f1079942b08c42607f35847, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_traitCategories: {fileID: 11400000, guid: 8ef77385fdd1f5b4e9b07bb3d2dc439f, type: 2}
+  m_impossibleTraitCategories: {fileID: 11400000, guid: fdcac4dfbc44b5341848fb7f4978f9b6, type: 2}
+  m_traitCount: 3
+--- !u!114 &4742077379958013251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8666838575912434918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e882097feff658646bc8271febe96d41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_interval: 2
+--- !u!114 &6640557799042268021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8666838575912434918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cc93dc1691b6c7419fb9d568fb3b081, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_increment: 2
+  m_minShadowScale: 0.35
+  m_maxShadowScale: 1
+  m_scaleCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 90
+      value: 0
+      inSlope: -0.000047105135
+      outSlope: -0.000047105135
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.08406635
+    - serializedVersion: 3
+      time: 180
+      value: 1
+      inSlope: 0.000030704956
+      outSlope: 0.000030704956
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.32991612
+    - serializedVersion: 3
+      time: 270
+      value: 0
+      inSlope: 0.000054279542
+      outSlope: 0.000054279542
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.029472182
+    - serializedVersion: 3
+      time: 360
+      value: 1
+      inSlope: 0.0000027141432
+      outSlope: 0.0000027141432
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.115171984
+      outWeight: 0
+    m_PreInfinity: 1
+    m_PostInfinity: 1
+    m_RotationOrder: 4
+  m_changeDuration: 0.1
+  m_changeEase: 1

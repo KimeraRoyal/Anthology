@@ -1,0 +1,17 @@
+{
+    "name": "IP2.Character.Chunk",
+    "rootNamespace": "IP2",
+    "references": [
+        "GUID:53315ce066811704fba8d5a9adfdf01e",
+        "GUID:ff853533eb87b6249a9c964729953193"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

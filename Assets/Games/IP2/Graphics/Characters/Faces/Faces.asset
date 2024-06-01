@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f97b4479ccc4591a04ba991d13fb2a6, type: 3}
+  m_Name: Faces
+  m_EditorClassIdentifier: 
+  m_animations:
+  - m_animation: {fileID: 11400000, guid: 31ff5e9458ec28c4a8827abae22319d2, type: 2}
+    m_chance: 3
+    m_totalChance: 3
+  - m_animation: {fileID: 11400000, guid: 5f6e54bc29a2a11499c2332b72a1bd4c, type: 2}
+    m_chance: 3
+    m_totalChance: 6
+  - m_animation: {fileID: 11400000, guid: a7ea8e88457bc6741a9ed556d39d0350, type: 2}
+    m_chance: 2
+    m_totalChance: 8
+  - m_animation: {fileID: 11400000, guid: 5767793d31641da47b37c9f68c777617, type: 2}
+    m_chance: 1
+    m_totalChance: 9
+  m_totalChance: 9

@@ -1,0 +1,16 @@
+{
+    "name": "IP2.Movement",
+    "rootNamespace": "IP2",
+    "references": [
+        "GUID:c5db21192ce3db74190ba64204ab6237"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

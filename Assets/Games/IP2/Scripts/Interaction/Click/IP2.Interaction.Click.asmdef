@@ -1,0 +1,16 @@
+{
+    "name": "IP2.Interaction.Click",
+    "rootNamespace": "IP2",
+    "references": [
+        "GUID:d2e061c7e9d32cc4fb8fc34146253f3f"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,18 @@
+{
+    "name": "UI.Panel",
+    "rootNamespace": "IP2",
+    "references": [
+        "GUID:cc046a77118213342be2f8bf53e726bf",
+        "GUID:a1ca6bd2513175346a616455e14d5ccc",
+        "GUID:d2e061c7e9d32cc4fb8fc34146253f3f"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d59c4132a5eab7458be17511c34f1f9, type: 3}
+  m_Name: Quotes
+  m_EditorClassIdentifier: 
+  m_categories:
+  - {fileID: 11400000, guid: dad6715eeaf33e543b179d59483412a2, type: 2}
+  - {fileID: 11400000, guid: 2b00c96cedbf59e438858887f469d446, type: 2}
+  - {fileID: 11400000, guid: 116d209a72ad4fb448a80ec9f099bf77, type: 2}
+  - {fileID: 11400000, guid: e542b01846ad9834bb5616abf573c5db, type: 2}
+  - {fileID: 11400000, guid: 12e7656c8df0493498b9ca4099da6572, type: 2}

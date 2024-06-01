@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8ba50418675a874abe927f6e5d1dfc9, type: 3}
+  m_Name: Food
+  m_EditorClassIdentifier: 
+  m_descriptions:
+  - Mmm... Yummy {0}...
+  - I want {0}.
+  - '{0} is so tasty!'
+  - I want to eat a {0} when I get home.
+  - I want nothing more than {0}...
+  - If I had a {0} my life would be significantly improved.
+  - Wow! {0}!
+  - Awaw... >_< imagine a {0} right now!!!!
+  - Could it be? {0}?
+  - Would there ever be a chance. {0} for dinner?!
+  m_traitElements:
+  - m_traits:
+    - Hamburger
+    - Fuit Gummy
+    - Bowl of Udon
+    - Raspberries
+    - Pasta
+    - Stew
+    - Slab of Beef
+    - Chili con Carne
+    - Burnt Meat
+    - Bread

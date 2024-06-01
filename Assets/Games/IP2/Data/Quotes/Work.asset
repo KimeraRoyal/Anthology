@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8ba50418675a874abe927f6e5d1dfc9, type: 3}
+  m_Name: Work
+  m_EditorClassIdentifier: 
+  m_descriptions:
+  - Hmm... I wish I were at the {0} right now.
+  - My job is not very fulfilling.
+  - I love my job!
+  - Maybe I should think about finding a new job...
+  - Boss makes a dollar, I make a dime...
+  - I don't want to go to the {0} later...
+  - The {0} has been boring lately.
+  - Is this all there is?
+  - Could there be more to life than the {0}?
+  - Glad I'm not working right now.
+  m_traitElements:
+  - m_traits:
+    - Factory
+    - Lab
+    - Office
+    - Conference Call
+    - Store
+    - Shop
+    - Cubicle
+    - Site
+    - Workplace
+    - Job

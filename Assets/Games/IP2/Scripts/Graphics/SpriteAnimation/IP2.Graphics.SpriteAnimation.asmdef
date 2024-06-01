@@ -1,0 +1,16 @@
+{
+    "name": "IP2.Graphics.SpriteAnimation",
+    "rootNamespace": "IP2",
+    "references": [
+        "GUID:2940972432cab6f43a1a9397435b50e1"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

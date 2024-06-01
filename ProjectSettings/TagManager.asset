@@ -12,17 +12,17 @@ TagManager:
   - Water
   - UI
   - 
-  - IP1.Collision
-  - IP1.Interactable
-  - IP1.Interactor
-  - IP1.Paper
-  - IP1.Shadow
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Collision
+  - Interactable
+  - Interactor
+  - Paper
+  - Shadow
+  - Background
+  - Speech Bubble
+  - Character
+  - Clothes
+  - Mirror
+  - Foreground
   - 
   - 
   - 
@@ -44,8 +44,14 @@ TagManager:
   - name: Background
     uniqueID: 3877162515
     locked: 0
+  - name: Behind Elements
+    uniqueID: 759873199
+    locked: 0
   - name: Elements
     uniqueID: 1790043719
+    locked: 0
+  - name: Infront Elements
+    uniqueID: 2150575769
     locked: 0
   - name: Foreground
     uniqueID: 4196356407

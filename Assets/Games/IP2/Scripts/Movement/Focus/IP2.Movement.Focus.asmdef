@@ -1,0 +1,17 @@
+{
+    "name": "IP2.Movement.Focus",
+    "rootNamespace": "IP2",
+    "references": [
+        "GUID:ff853533eb87b6249a9c964729953193",
+        "GUID:a1ca6bd2513175346a616455e14d5ccc"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -1,0 +1,16 @@
+{
+    "name": "IP2.Character.Target",
+    "rootNamespace": "IP2",
+    "references": [
+        "GUID:53315ce066811704fba8d5a9adfdf01e"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

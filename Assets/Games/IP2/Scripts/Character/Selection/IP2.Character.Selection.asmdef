@@ -1,0 +1,19 @@
+{
+    "name": "IP2.Character.Selection",
+    "rootNamespace": "IP2",
+    "references": [
+        "GUID:53315ce066811704fba8d5a9adfdf01e",
+        "GUID:a1ca6bd2513175346a616455e14d5ccc",
+        "GUID:ff853533eb87b6249a9c964729953193",
+        "GUID:d2e061c7e9d32cc4fb8fc34146253f3f"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
