@@ -8,11 +8,13 @@ namespace IP1
     public class StampShadow : MonoBehaviour
     {
         private PaperStack m_paperStack;
+        private PaperArm m_paperArm;
 
         private Mover m_mover;
 
         private ClampPosition m_clampPosition;
 
+        [SerializeField] private int m_uninteractableLayerId;
         [SerializeField] private int m_interactableLayerId;
         
         [SerializeField] private LayerMask m_boxcastLayerMask;
@@ -25,6 +27,7 @@ namespace IP1
         private void Awake()
         {
             m_paperStack = FindObjectOfType<PaperStack>();
+            m_paperArm = FindObjectOfType<PaperArm>();
 
             m_mover = GetComponent<Mover>();
             m_clampPosition = GetComponent<ClampPosition>();
@@ -36,10 +39,13 @@ namespace IP1
         {
             var rayHit = Physics2D.BoxCast(m_boxcastOrigin, m_boxcastSize, 0, Vector2.zero, 0, m_boxcastLayerMask);
             if(rayHit.collider == null) { return; }
+
+            var paperHitbox = rayHit.collider.GetComponent<PaperHitbox>();
+            if (!paperHitbox) { return; }
             
             Move();
 
-            rayHit.collider.gameObject.layer = m_interactableLayerId;
+            rayHit.collider.gameObject.layer = paperHitbox.Paper.Stampable ? m_interactableLayerId : m_uninteractableLayerId;
         }
 
         private void Move()

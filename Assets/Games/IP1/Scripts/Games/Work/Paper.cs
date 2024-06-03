@@ -6,9 +6,13 @@ namespace IP1
     public class Paper : MonoBehaviour
     {
         private Collider2D m_collider;
+
+        [SerializeField] private bool m_stampable = true;
         
         [SerializeField] private GameObject m_stampMarkingPrefab;
         [SerializeField] private Vector3 m_stampMarkingOffset;
+
+        public bool Stampable => m_stampable;
 
         private void Awake()
         {

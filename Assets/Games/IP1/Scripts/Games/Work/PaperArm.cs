@@ -12,6 +12,8 @@ namespace IP1
         
         private PaperStack m_paperStack;
         private StampArm m_stampArm;
+
+        [SerializeField] private int m_initialStackSize;
         
         [SerializeField] private Paper m_paperPrefab;
         [SerializeField] private Paper m_initialStackPaperPrefab;
@@ -37,6 +39,7 @@ namespace IP1
         private Sequence m_sequence;
 
         public Action<Paper> OnPaperCreated;
+        public Action<Paper> OnInitialPaperCreated;
         public Action<Paper> OnPaperDropped;
 
         private void Awake()
@@ -84,12 +87,14 @@ namespace IP1
 
         private void SpawnInitialStack()
         {
-            if(!m_state) { return; }
+            if(m_state) { m_initialStackSize = m_state.PaperStackSize; }
 
-            for (var i = 0; i < m_state.PaperStackSize; i++)
+            for (var i = 0; i < m_initialStackSize; i++)
             {
                 var paper = Instantiate(m_initialStackPaperPrefab, m_paperOffset + m_paperStack.CurrentPaperOffset, Quaternion.identity, transform);
                 m_paperStack.AddPaper(paper);
+                
+                OnInitialPaperCreated?.Invoke(paper);
             }
         }
 
@@ -129,7 +134,7 @@ namespace IP1
         {
             m_heldPaper.transform.SetParent(null);
             OnPaperDropped?.Invoke(m_heldPaper);
-            m_state.PaperStackSize++;
+            if(m_state) { m_state.PaperStackSize++; }
             
             m_heldPaper = null;
         }

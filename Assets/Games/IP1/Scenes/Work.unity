@@ -215,6 +215,10 @@ PrefabInstance:
       propertyPath: m_SortingLayer
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 7436407518140000715, guid: 60b4e07c92d9f4b429917487a009ae93, type: 3}
+      propertyPath: m_initialStackSize
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 7543857830005555122, guid: 60b4e07c92d9f4b429917487a009ae93, type: 3}
       propertyPath: m_SortingLayer
       value: 3

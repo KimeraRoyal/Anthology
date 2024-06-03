@@ -36,6 +36,14 @@ PrefabInstance:
       propertyPath: m_frameTime
       value: 0.8
       objectReference: {fileID: 0}
+    - target: {fileID: 2522589552657769285, guid: ddfec4f5b448cb24f88d839419205411, type: 3}
+      propertyPath: m_Size.x
+      value: 89.55466
+      objectReference: {fileID: 0}
+    - target: {fileID: 2522589552657769285, guid: ddfec4f5b448cb24f88d839419205411, type: 3}
+      propertyPath: m_Size.y
+      value: 103.74866
+      objectReference: {fileID: 0}
     - target: {fileID: 2659891050502199277, guid: ddfec4f5b448cb24f88d839419205411, type: 3}
       propertyPath: m_Name
       value: Initial Paper
@@ -51,6 +59,14 @@ PrefabInstance:
     - target: {fileID: 6748789146674405018, guid: ddfec4f5b448cb24f88d839419205411, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7461242441294465339, guid: ddfec4f5b448cb24f88d839419205411, type: 3}
+      propertyPath: m_Size.x
+      value: 8.172402
+      objectReference: {fileID: 0}
+    - target: {fileID: 7461242441294465339, guid: ddfec4f5b448cb24f88d839419205411, type: 3}
+      propertyPath: m_Size.y
+      value: 8.637277
       objectReference: {fileID: 0}
     - target: {fileID: 7793692739938054327, guid: ddfec4f5b448cb24f88d839419205411, type: 3}
       propertyPath: m_RootOrder
@@ -94,6 +110,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7793692739938054327, guid: ddfec4f5b448cb24f88d839419205411, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8667368968499043758, guid: ddfec4f5b448cb24f88d839419205411, type: 3}
+      propertyPath: m_stampable
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
