@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
@@ -7,10 +8,15 @@ namespace Anthology.Exit
     [RequireComponent(typeof(Image))]
     public class Exit : MonoBehaviour
     {
+        [SerializeField] private int m_skipFrames = 2;
+        
         [SerializeField] private float m_closeTime = 1.0f;
         [SerializeField] private float m_resetSpeed = 1.0f;
-    
+        
         private float m_timer;
+        
+        private bool m_holdingEscape;
+        private int m_skippedFrames;
 
         public float Timer
         {
@@ -27,7 +33,16 @@ namespace Anthology.Exit
 
         private void Update()
         {
-            if (Input.GetKey(KeyCode.Escape))
+            if (m_skippedFrames < m_skipFrames) // Skip X frames to avoid recognising inputs from previous scene.
+            {
+                m_skippedFrames++;
+                return;
+            }
+
+            if (Input.GetKeyDown(KeyCode.Escape)) { m_holdingEscape = true; }
+            else if(Input.GetKeyUp(KeyCode.Escape)) { m_holdingEscape = false; }
+            
+            if(m_holdingEscape)
             {
                 Close();
             }

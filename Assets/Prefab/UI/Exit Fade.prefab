@@ -90,7 +90,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae9fa5de92ae6ae4db1c0d07b735af77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_closeTime: 2
+  m_closeTime: 1.5
   m_resetSpeed: 5
   OnTimerCounter:
     m_PersistentCalls:
