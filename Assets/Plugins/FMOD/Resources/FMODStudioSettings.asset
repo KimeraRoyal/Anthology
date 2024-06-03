@@ -526,8 +526,8 @@ MonoBehaviour:
   switchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: ../IndividualProject/Prescription_FMOD/PillGame/PillGame.fspro
-  sourceBankPath: ../IndividualProject/Prescription_FMOD/PillGame/Build
+  sourceProjectPath: ../AnthologyFMOD/Anthology.fspro
+  sourceBankPath: ../AnthologyFMOD/Build
   sourceBankPathUnformatted: 
   BankRefreshCooldown: 5
   ShowBankRefreshWindow: 1

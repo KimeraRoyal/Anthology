@@ -9,6 +9,13 @@ namespace IP2
 
         private Vector3 m_velocity;
 
+        protected override void Start()
+        {
+            base.Start();
+
+            CurrentPosition = OffsetPosition;
+        }
+
         private void Update()
         {
             if(Mathf.Abs((CurrentPosition - OffsetPosition).magnitude) < 0.001f) { return; }

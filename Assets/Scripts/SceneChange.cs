@@ -5,7 +5,15 @@ namespace Anthology
 {
     public class SceneChange : MonoBehaviour
     {
-        public void LoadScene(string _sceneName)
-            => SceneManager.LoadScene(_sceneName);
+        private string m_queuedScene;
+        
+        public void LoadScene(string _scene)
+            => SceneManager.LoadScene(_scene);
+
+        public void LoadScene()
+            => LoadScene(m_queuedScene);
+
+        public void QueueScene(string _scene)
+            => m_queuedScene = _scene;
     }
 }

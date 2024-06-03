@@ -1,5 +1,7 @@
+using System;
 using DG.Tweening;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 namespace IP1
@@ -17,7 +19,11 @@ namespace IP1
         [SerializeField] private float m_fadeOutTime = 1.0f;
         [SerializeField] private Ease m_fadeOutEase = Ease.Linear;
 
-        private Tween m_tween;
+        private Sequence m_sequence;
+
+        public UnityEvent<bool> OnFaded;
+        public UnityEvent OnFadeIn;
+        public UnityEvent OnFadeOut;
 
         private void Awake()
         {
@@ -32,7 +38,7 @@ namespace IP1
 
         public void Fade(bool _visible)
         {
-            if(m_tween is { active: true }) { m_tween.Kill(); }
+            if(m_sequence is { active: true }) { m_sequence.Kill(); }
             
             var time = _visible ? m_fadeOutTime : m_fadeInTime;
             var ease = _visible ? m_fadeOutEase : m_fadeInEase;
@@ -46,8 +52,18 @@ namespace IP1
             }
             else
             {
-                m_tween = DOTween.To(() => m_image.color, _color => m_image.color = _color, targetColor, time).SetEase(ease);
+                m_sequence = DOTween.Sequence();
+                m_sequence.Append(DOTween.To(() => m_image.color, _color => m_image.color = _color, targetColor, time).SetEase(ease));
+                m_sequence.AppendCallback(() => FadeCallback(_visible));
             }
+        }
+
+        private void FadeCallback(bool _visible)
+        {
+            OnFaded?.Invoke(_visible);
+            
+            if(_visible) { OnFadeOut?.Invoke(); }
+            else { OnFadeIn?.Invoke(); }
         }
     }
 }
