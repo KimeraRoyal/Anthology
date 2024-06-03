@@ -7,7 +7,6 @@ namespace IP2
     public class Target : MonoBehaviour
     {
         [SerializeField] private TraitCategories m_traitCategories;
-        [SerializeField] private TraitCategories m_impossibleTraitCategories;
         [SerializeField] private int m_traitCount = 3;
         
         private Trait[] m_traits;
@@ -30,18 +29,6 @@ namespace IP2
         }
 
         public void Personify()
-        {
-            var normalTraits = Array.Empty<Trait>();
-            if (m_traitCount > 1) { normalTraits = m_traitCategories.GetTraits(m_traitCount - 1); }
-
-            var traits = new Trait[m_traitCount];
-            for (var i = 0; i < m_traitCount - 1; i++)
-            {
-                traits[i] = normalTraits[i];
-            }
-            traits[m_traitCount - 1] = m_impossibleTraitCategories.GetTrait();
-
-            Traits = traits;
-        }
+            => Traits = m_traitCategories.GetTraits(m_traitCount);
     }
 }
