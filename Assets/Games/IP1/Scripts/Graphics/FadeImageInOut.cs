@@ -11,6 +11,7 @@ namespace IP1
     {
         private Image m_image;
 
+        [SerializeField] private bool m_visible = true;
         [SerializeField] private bool m_fadeInOnStart;
         
         [SerializeField] private float m_fadeInTime = 1.0f;
@@ -32,6 +33,7 @@ namespace IP1
 
         private void Start()
         {
+            FadeInstant(m_visible);
             if(!m_fadeInOnStart) { return; }
             Fade(false);
         }
@@ -41,25 +43,35 @@ namespace IP1
             if(m_sequence is { active: true }) { m_sequence.Kill(); }
             
             var time = _visible ? m_fadeOutTime : m_fadeInTime;
+            if (time < 0.001f)
+            {
+                FadeInstant(_visible);
+                return;
+            }
+            
             var ease = _visible ? m_fadeOutEase : m_fadeInEase;
             
             var targetColor = m_image.color;
             targetColor.a = _visible ? 1.0f : 0.0f;
 
-            if (time < 0.001f)
-            {
-                m_image.color = targetColor;
-            }
-            else
-            {
-                m_sequence = DOTween.Sequence();
-                m_sequence.Append(DOTween.To(() => m_image.color, _color => m_image.color = _color, targetColor, time).SetEase(ease));
-                m_sequence.AppendCallback(() => FadeCallback(_visible));
-            }
+            m_sequence = DOTween.Sequence();
+            m_sequence.Append(DOTween.To(() => m_image.color, _color => m_image.color = _color, targetColor, time).SetEase(ease));
+            m_sequence.AppendCallback(() => FadeCallback(_visible));
+        }
+
+        public void FadeInstant(bool _visible)
+        {
+            var targetColor = m_image.color;
+            targetColor.a = _visible ? 1.0f : 0.0f;
+            m_image.color = targetColor;
+
+            FadeCallback(_visible);
         }
 
         private void FadeCallback(bool _visible)
         {
+            m_visible = _visible;
+            
             OnFaded?.Invoke(_visible);
             
             if(_visible) { OnFadeOut?.Invoke(); }
