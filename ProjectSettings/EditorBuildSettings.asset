@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Dressup.unity
     guid: e9efd5144922c654a93177fd3ecc2a6f
+  - enabled: 1
+    path: Assets/Scenes/Sandwich.unity
+    guid: 0cae5468fbd968b4bbf5909b5d98f325
   m_configObjects: {}
