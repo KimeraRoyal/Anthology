@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eaf28e349cda4e4982c5b7d05b050af, type: 3}
+  m_Name: Anticipation
+  m_EditorClassIdentifier: 
+  m_author: Beatrice Timken
+  m_text: "the animal is in me,\r\nhere. it is nourished\r\nby boombox voice\r\nproudly
+    child of the \r\naspirin age this sinking \r\n\r\ndistance is a cruelty. sleepwalked\r\narms
+    outstretched tongue-tied \r\ncherry-stem modesty fed by \r\nfreedom in soft coos
+    isolation corners me\r\n motherly. Embarrassment-\r\n\r\nbroken-eye-contact-ribs
+    somber\r\nsweetly dragged with furry licks\r\nfaint when trying to stand couched
+    \r\nself assured worries in crevices\r\n\r\nof gnashing fangs, hackles up\r\nat
+    something new keep greedily \r\nlicking at wounds contented\r\nproduct of auto-erotic
+    flagellation\r"
