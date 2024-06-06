@@ -7,12 +7,12 @@ namespace IP3.Interaction.Click
     {
         private enum RayType
         {
-            Ray_2D,
-            Ray_3D
+            Ray2D,
+            Ray3D
         }
         
         [SerializeField] private Camera m_camera;
-        [SerializeField] private RayType m_rayType = RayType.Ray_2D;
+        [SerializeField] private RayType m_rayType = RayType.Ray2D;
 
         [SerializeField] private LayerMask m_mask;
         [SerializeField] private bool m_hold;
@@ -86,7 +86,7 @@ namespace IP3.Interaction.Click
             
             switch (m_rayType)
             {
-                case RayType.Ray_2D:
+                case RayType.Ray2D:
                 {
                     if (ShootRay2D(out var _rayHit))
                     {
@@ -95,7 +95,7 @@ namespace IP3.Interaction.Click
                     }
                     break;
                 }
-                case RayType.Ray_3D:
+                case RayType.Ray3D:
                 {
                     if (ShootRay3D(out var _rayHit))
                     {

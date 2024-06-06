@@ -59,8 +59,8 @@ namespace IP3.Gameplay.Clothes
             UpdatePosition(TargetPosition);
             m_startingPosition = TargetPosition;
         
-            m_clickable.OnClicked += OnClicked;
-            m_clickable.OnReleased += OnReleased;
+            m_clickable.OnClicked.AddListener(OnClicked);
+            m_clickable.OnReleased.AddListener(OnReleased);
         }
 
         private void Update()

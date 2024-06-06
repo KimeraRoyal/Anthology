@@ -1,13 +1,13 @@
 using System;
 using IP3.Movement;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace Anthology
 {
-    [RequireComponent(typeof(Mover))]
     public class MenuOption : MonoBehaviour
     {
-        private Mover m_mover;
+        [SerializeField] private Mover m_mover;
         
         [SerializeField] private float m_unselectedDistance, m_selectedDistance;
         
@@ -21,6 +21,8 @@ namespace Anthology
             get => m_selected;
             set
             {
+                if(m_selected == value) { return; }
+                
                 m_selected = value;
                 m_selectedDirty = true;
                 
@@ -34,11 +36,11 @@ namespace Anthology
             set => m_angle = value;
         }
 
-        public Action OnSelected;
+        public UnityEvent OnSelected;
 
         private void Awake()
         {
-            m_mover = GetComponent<Mover>();
+            if(!m_mover) { m_mover = GetComponent<Mover>(); }
         }
 
         private void Update()

@@ -17,8 +17,8 @@ namespace IP3.Movement.Drag
 
         private void Start()
         {
-            m_clickable.OnHeld += OnHeld;
-            m_clickable.OnReleased += OnReleased;
+            m_clickable.OnHeld.AddListener(OnHeld);
+            m_clickable.OnReleased.AddListener(OnReleased);
         }
 
         private void OnHeld()

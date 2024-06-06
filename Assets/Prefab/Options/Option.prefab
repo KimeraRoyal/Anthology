@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 2362164606668643788}
   - component: {fileID: 5536020029971032539}
   - component: {fileID: 4303025623465235398}
+  - component: {fileID: 2676093358678873140}
+  - component: {fileID: 4909417231271406259}
   m_Layer: 17
   m_Name: Graphic
   m_TagString: Untagged
@@ -105,6 +107,55 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2676093358678873140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2462854099355868344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8eb540cb783ff2c43a65c731fe9c9625, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnClicked:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3168172312869538556}
+        m_TargetAssemblyTypeName: Anthology.MenuOption, Anthology.Option
+        m_MethodName: Select
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnHeld:
+    m_PersistentCalls:
+      m_Calls: []
+  OnReleased:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &4909417231271406259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2462854099355868344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84365e211bab1734da4c4a3dfbd721a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_useLocalPosition: 1
+  m_factor: {x: 1, y: 1, z: 1}
+  m_offset: {x: 0, y: 0, z: 0}
+  m_movementSmoothTime: 0.2
 --- !u!1 &4666639284819567342
 GameObject:
   m_ObjectHideFlags: 0
@@ -115,7 +166,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5095220067972041363}
   - component: {fileID: 3168172312869538556}
-  - component: {fileID: 8858282499210270631}
   m_Layer: 17
   m_Name: Option
   m_TagString: Untagged
@@ -151,22 +201,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 846d9dacf3fdedc4aa960a3f22b82c10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_unselectedDistance: 0
-  m_selectedDistance: 0
+  m_mover: {fileID: 4909417231271406259}
+  m_unselectedDistance: 4
+  m_selectedDistance: 6
   m_angle: 0
---- !u!114 &8858282499210270631
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4666639284819567342}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84365e211bab1734da4c4a3dfbd721a8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_useLocalPosition: 0
-  m_factor: {x: 1, y: 1, z: 1}
-  m_offset: {x: 0, y: 0, z: 0}
-  m_movementSmoothTime: 1

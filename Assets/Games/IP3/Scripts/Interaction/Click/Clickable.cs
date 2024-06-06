@@ -1,14 +1,14 @@
-using System;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace IP3.Interaction.Click
 {
     public class Clickable : MonoBehaviour
     {
-        public Action OnClicked;
+        public UnityEvent OnClicked;
         
-        public Action OnHeld;
-        public Action OnReleased;
+        public UnityEvent OnHeld;
+        public UnityEvent OnReleased;
 
         private bool m_held;
 
