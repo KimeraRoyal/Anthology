@@ -11,10 +11,23 @@ namespace Anthology
         
         [SerializeField] private float m_unselectedDistance, m_selectedDistance;
         
-        [SerializeField] private float m_angle;
+        private float m_angle;
+        private bool m_angleDirty;
 
         private bool m_selected;
         private bool m_selectedDirty;
+
+        public float Angle
+        {
+            get => m_angle;
+            set
+            {
+                m_angle = value;
+                m_angleDirty = true;
+                
+                OnAngleChanged?.Invoke(m_angle);
+            }
+        }
 
         public bool Selected
         {
@@ -26,17 +39,15 @@ namespace Anthology
                 m_selected = value;
                 m_selectedDirty = true;
                 
-                OnSelected?.Invoke();
+                if(m_selected) { OnSelected?.Invoke(); }
+                else { OnDeselected?.Invoke(); }
             }
         }
 
-        public float Angle
-        {
-            get => m_angle;
-            set => m_angle = value;
-        }
+        public UnityEvent<float> OnAngleChanged;
 
         public UnityEvent OnSelected;
+        public UnityEvent OnDeselected;
 
         private void Awake()
         {
@@ -45,13 +56,19 @@ namespace Anthology
 
         private void Update()
         {
-            var angles = transform.localEulerAngles;
-            angles.y = m_angle;
-            transform.localEulerAngles = angles;
+            if (m_angleDirty)
+            {
+                var angles = transform.localEulerAngles;
+                angles.y = m_angle;
+                transform.localEulerAngles = angles;
 
+                m_angleDirty = false;
+            }
+            
             if (m_selectedDirty)
             {
                 m_mover.TargetPosition = Vector3.forward * (m_selected ? m_selectedDistance : m_unselectedDistance);
+                
                 m_selectedDirty = false;
             }
         }

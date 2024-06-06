@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -12,6 +13,8 @@ namespace Anthology
         private MenuOption[] m_options;
 
         private int m_selectedIndex = -1;
+
+        public IReadOnlyList<MenuOption> Options => m_options;
         
         public UnityEvent<int> OnOptionSelected;
 
