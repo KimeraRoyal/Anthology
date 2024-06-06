@@ -5,7 +5,14 @@ namespace IP3.Interaction.Click
 {
     public class Clicker : MonoBehaviour
     {
+        private enum RayType
+        {
+            Ray_2D,
+            Ray_3D
+        }
+        
         [SerializeField] private Camera m_camera;
+        [SerializeField] private RayType m_rayType = RayType.Ray_2D;
 
         [SerializeField] private LayerMask m_mask;
         [SerializeField] private bool m_hold;
@@ -53,9 +60,9 @@ namespace IP3.Interaction.Click
         private Clickable Click()
         {
             Clickable clickable = null;
-            if (ShootRay(out var _rayHit))
+            if (ShootRay(out var _collider))
             {
-                clickable = _rayHit.collider.GetComponentInParent<Clickable>();
+                clickable = _collider.GetComponentInParent<Clickable>();
                 if (clickable) { clickable.Click(m_hold); }
             }
             OnClick?.Invoke(clickable);
@@ -73,11 +80,50 @@ namespace IP3.Interaction.Click
             OnRelease?.Invoke(m_currentClicked);
         }
 
-        private bool ShootRay(out RaycastHit2D o_rayHit)
+        private bool ShootRay(out Transform o_colliderTransform)
+        {
+            o_colliderTransform = null;
+            
+            switch (m_rayType)
+            {
+                case RayType.Ray_2D:
+                {
+                    if (ShootRay2D(out var _rayHit))
+                    {
+                        o_colliderTransform = _rayHit.collider.transform;
+                        return true;
+                    }
+                    break;
+                }
+                case RayType.Ray_3D:
+                {
+                    if (ShootRay3D(out var _rayHit))
+                    {
+                        o_colliderTransform = _rayHit.collider.transform;
+                        return true;
+                    }
+                    break;
+                }
+                default:
+                {
+                    throw new ArgumentOutOfRangeException();
+                }
+            }
+            
+            return false;
+        }
+
+        private bool ShootRay2D(out RaycastHit2D o_rayHit)
         {
             var ray = m_camera.ScreenPointToRay(Input.mousePosition);
             o_rayHit = Physics2D.Raycast(ray.origin, Vector2.up, 0.001f, m_mask);
             return o_rayHit.collider;
+        }
+
+        private bool ShootRay3D(out RaycastHit o_rayHit)
+        {
+            var ray = m_camera.ScreenPointToRay(Input.mousePosition);
+            return Physics.Raycast(ray, out o_rayHit, m_camera.farClipPlane, m_mask);
         }
 
         public void Block()
