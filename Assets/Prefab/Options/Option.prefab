@@ -115,8 +115,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_scale: {x: 1, y: 1, z: 1}
-  m_minScale: {x: 1.025, y: 0.975, z: 1.025}
-  m_maxScale: {x: 0.975, y: 1.025, z: 0.975}
+  m_minScale: {x: 1.04, y: 0.96, z: 1.04}
+  m_maxScale: {x: 0.96, y: 1.04, z: 0.96}
   m_minSpeed: 0.4
   m_maxSpeed: 0.6
 --- !u!1 &1384383413611451120

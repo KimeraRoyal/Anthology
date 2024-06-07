@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.11564369, g: 0.062845424, b: 0.15051678, a: 1}
+  m_IndirectSpecularColor: {r: 0.7210546, g: 0.2992646, b: 1.0364057, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -569,7 +569,7 @@ GameObject:
   m_Component:
   - component: {fileID: 927382431}
   - component: {fileID: 927382433}
-  - component: {fileID: 927382432}
+  - component: {fileID: 927382435}
   m_Layer: 0
   m_Name: Background Camera
   m_TagString: Untagged
@@ -592,14 +592,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1321630770}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!81 &927382432
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 927382430}
-  m_Enabled: 1
 --- !u!20 &927382433
 Camera:
   m_ObjectHideFlags: 0
@@ -651,6 +643,20 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &927382435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 927382430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66eef0731f6abf74db033fd73dad1af2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_screenEffect: {fileID: 2100000, guid: 7166b1e28aa03ad46b731779ebb8adca, type: 2}
+  m_wrapMode: 2
 --- !u!1 &1203374369
 GameObject:
   m_ObjectHideFlags: 0
@@ -5475,11 +5481,11 @@ Transform:
   m_GameObject: {fileID: 1203374369}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1321630770}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1321630767
 GameObject:
@@ -5566,6 +5572,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 927382431}
+  - {fileID: 1203374372}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1321630771
@@ -5969,7 +5976,6 @@ SceneRoots:
   - {fileID: 705507995}
   - {fileID: 1321630770}
   - {fileID: 2134849713}
-  - {fileID: 1203374372}
   - {fileID: 243371205}
   - {fileID: 450136436}
   - {fileID: 1478736107}
