@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 713600607cd649448a1135c3a2d58ecc, type: 3}
   m_Name: Dressup
   m_EditorClassIdentifier: 
-  m_blurb: A short descriptive blurb.
+  m_blurb: An exploration of the disconnect between personal identity and outward
+    expression.
   m_buttonVerb: Play
   m_icon: {fileID: 21300000, guid: 8473fa2f5d48db9438040099919d7e8a, type: 3}

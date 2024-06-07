@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_blurb: A short poem.
   m_buttonVerb: Read
-  m_icon: {fileID: 0}
+  m_icon: {fileID: 21300000, guid: aa22b0b54ceac774b8292c6142a890e5, type: 3}

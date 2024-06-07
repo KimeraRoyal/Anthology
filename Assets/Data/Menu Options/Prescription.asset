@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 713600607cd649448a1135c3a2d58ecc, type: 3}
   m_Name: Prescription
   m_EditorClassIdentifier: 
-  m_blurb: A short descriptive blurb.
+  m_blurb: The feeling of something you waited for being reduced to a part of your
+    daily routine.
   m_buttonVerb: Play
   m_icon: {fileID: 21300000, guid: a5ecc4c09bd78444a9139cb0875bbb11, type: 3}
