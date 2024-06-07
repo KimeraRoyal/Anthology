@@ -18,7 +18,7 @@ public class Squish : MonoBehaviour
 
     private void Update()
     {
-        m_angle = (m_angle + Time.deltaTime * m_speed) % (Mathf.PI * 2.0f);
+        m_angle += Time.deltaTime * m_speed;
 
         var t = Mathf.Sin(m_angle) / 2.0f + 0.5f;
         var squishScale = Vector3.Lerp(m_minScale, m_maxScale, t);

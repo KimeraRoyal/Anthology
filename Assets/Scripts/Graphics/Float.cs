@@ -19,7 +19,7 @@ public class Float : MonoBehaviour
 
     private void Update()
     {
-        m_angle = (m_angle + Time.deltaTime * m_speed) % (Mathf.PI * 2.0f);
+        m_angle += Time.deltaTime * m_speed;
 
         var t = Mathf.Sin(m_angle) / 2.0f + 0.5f;
         transform.localPosition = Vector3.Lerp(m_minPosition, m_maxPosition, t) + m_offset;
