@@ -1,4 +1,3 @@
-using System;
 using IP3.Movement;
 using UnityEngine;
 using UnityEngine.Events;
@@ -7,6 +6,8 @@ namespace Anthology
 {
     public class MenuOption : MonoBehaviour
     {
+        private OptionDetails m_details;
+        
         [SerializeField] private Mover m_mover;
         
         [SerializeField] private float m_unselectedDistance, m_selectedDistance;
@@ -16,6 +17,18 @@ namespace Anthology
 
         private bool m_selected;
         private bool m_selectedDirty;
+
+        public OptionDetails Details
+        {
+            get => m_details;
+            set
+            {
+                if(m_details == value) { return; }
+                
+                m_details = value;
+                OnDetailsChanged?.Invoke(m_details);
+            }
+        }
 
         public float Angle
         {
@@ -43,6 +56,8 @@ namespace Anthology
                 else { OnDeselected?.Invoke(); }
             }
         }
+
+        public UnityEvent<OptionDetails> OnDetailsChanged;
 
         public UnityEvent<float> OnAngleChanged;
 

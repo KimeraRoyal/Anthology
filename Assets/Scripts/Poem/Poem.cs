@@ -1,7 +1,7 @@
 using Sirenix.OdinInspector;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "New Poem", menuName = "Poem")]
+[CreateAssetMenu(fileName = "New Poem", menuName = "Title Screen/Poem")]
 public class Poem : ScriptableObject
 {
     [SerializeField] private string m_author;

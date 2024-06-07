@@ -45,7 +45,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cde4c141814bac4eaaf14a81e75674c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_numOptions: 6
+  m_optionDetails:
+  - {fileID: 11400000, guid: 88ef800d185bcd04ca04f0af47c225b6, type: 2}
+  - {fileID: 11400000, guid: 0fa419f233338e84fa888190613335a7, type: 2}
+  - {fileID: 11400000, guid: 4feb380c1fff1494da21b6e53edefb8f, type: 2}
+  - {fileID: 11400000, guid: 146bd77bc0379ab438047dcfd365522d, type: 2}
+  - {fileID: 11400000, guid: 9c4296ba2fac7b149bbd9b711faaf09a, type: 2}
+  - {fileID: 11400000, guid: 32ef9bda179dada4d83ae581b716d18c, type: 2}
   m_optionPrefab: {fileID: 3168172312869538556, guid: a8f047985d7e3324e979ff8983387221, type: 3}
   OnOptionSelected:
     m_PersistentCalls:

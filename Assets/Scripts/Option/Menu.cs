@@ -6,7 +6,7 @@ namespace Anthology
 {
     public class Menu : MonoBehaviour
     {
-        [SerializeField] private int m_numOptions = 1;
+        [SerializeField] private OptionDetails[] m_optionDetails;
         
         [SerializeField] private MenuOption m_optionPrefab;
 
@@ -20,13 +20,16 @@ namespace Anthology
 
         private void Start()
         {
-            m_options = new MenuOption[m_numOptions];
-            var theta = 360.0f / m_numOptions;
+            var optionCount = m_optionDetails.Length;
             
-            for (var i = 0; i < m_numOptions; i++)
+            m_options = new MenuOption[optionCount];
+            var theta = 360.0f / optionCount;
+            
+            for (var i = 0; i < optionCount; i++)
             {
                 m_options[i] = Instantiate(m_optionPrefab, transform);
-                m_options[i].Angle = theta * i;
+                m_options[i].Details = m_optionDetails[i];
+                m_options[i].Angle = 360.0f - theta * i;
 
                 var index = i;
                 m_options[i].OnSelected.AddListener(() => SelectOption(index));
