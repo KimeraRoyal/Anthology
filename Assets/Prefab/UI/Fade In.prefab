@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1992703641362190965}
   - component: {fileID: 5969624131017265041}
   - component: {fileID: 7811848917804069425}
+  - component: {fileID: 8658755903449499687}
   m_Layer: 5
   m_Name: Fade In
   m_TagString: Untagged
@@ -88,8 +89,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bf68f0b777f20247b966c509f0b589c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_visible: 1
   m_fadeInOnStart: 1
   m_fadeInTime: 0.4
   m_fadeInEase: 1
   m_fadeOutTime: 1
   m_fadeOutEase: 1
+  OnFaded:
+    m_PersistentCalls:
+      m_Calls: []
+  OnFadeIn:
+    m_PersistentCalls:
+      m_Calls: []
+  OnFadeOut:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8658755903449499687}
+        m_TargetAssemblyTypeName: Anthology.SceneChange, Anthology
+        m_MethodName: LoadScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &8658755903449499687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2134685131152822113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2158e6129fc5334eae8cad575888a5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

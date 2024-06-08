@@ -66,6 +66,8 @@ namespace Anthology
         public UnityEvent<bool> OnSelected;
         public UnityEvent OnDeselected;
 
+        public UnityEvent OnClicked;
+
         private void Update()
         {
             if (m_angleDirty)
@@ -83,5 +85,8 @@ namespace Anthology
 
         public void Deselect()
             => Selected = false;
+
+        public void Click()
+            => OnClicked?.Invoke();
     }
 }
