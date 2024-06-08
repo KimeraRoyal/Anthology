@@ -657,6 +657,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_screenEffect: {fileID: 2100000, guid: 7166b1e28aa03ad46b731779ebb8adca, type: 2}
   m_wrapMode: 2
+  m_interlaceDivision: 4
 --- !u!1 &1203374369
 GameObject:
   m_ObjectHideFlags: 0
