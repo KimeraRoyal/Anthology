@@ -350,9 +350,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 846d9dacf3fdedc4aa960a3f22b82c10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_mover: {fileID: 2828840265167471489}
-  m_unselectedDistance: 4
-  m_selectedDistance: 6.5
   OnDetailsChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -591,6 +588,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6866593416145675041}
   - component: {fileID: 2828840265167471489}
+  - component: {fileID: 214730661100092863}
   m_Layer: 17
   m_Name: Anchor
   m_TagString: Untagged
@@ -630,3 +628,18 @@ MonoBehaviour:
   m_factor: {x: 1, y: 1, z: 1}
   m_offset: {x: 0, y: 0, z: 0}
   m_movementSmoothTime: 0.2
+--- !u!114 &214730661100092863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8120414404068040823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c59d04ad789495089baeef9f5b99fd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_mover: {fileID: 2828840265167471489}
+  m_deselectedDistance: 4
+  m_selectedDistance: 6.5

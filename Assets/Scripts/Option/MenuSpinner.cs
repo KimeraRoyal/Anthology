@@ -22,17 +22,25 @@ namespace Anthology
             m_menu.OnOptionSelected.AddListener(OnOptionSelected);
         }
 
-        private void OnOptionSelected(int _index)
+        private void OnOptionSelected(int _index, bool _firstSelected)
         {
             var angle = m_defaultAngle + -m_menu.Options[_index].Angle;
-            Rotate(angle);
+            Rotate(angle, _firstSelected);
         }
 
-        private void Rotate(float _angle)
+        private void Rotate(float _angle, bool _firstSelected)
         {
+            var targetAngle = Vector3.up * _angle;
+            
+            if (_firstSelected)
+            {
+                transform.localEulerAngles = targetAngle;
+                return;
+            }
+            
             if(m_rotateTween is { active: true }) { m_rotateTween.Kill(); }
 
-            m_rotateTween = transform.DOLocalRotate(Vector3.up * _angle, m_rotateDuration, RotateMode.Fast).SetEase(m_rotateEase);
+            m_rotateTween = transform.DOLocalRotate(targetAngle, m_rotateDuration, RotateMode.Fast).SetEase(m_rotateEase);
         }
     }
 }

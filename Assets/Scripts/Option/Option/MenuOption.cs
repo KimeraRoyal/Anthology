@@ -1,4 +1,3 @@
-using IP3.Movement;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -8,15 +7,11 @@ namespace Anthology
     {
         private OptionDetails m_details;
         
-        [SerializeField] private Mover m_mover;
-        
-        [SerializeField] private float m_unselectedDistance, m_selectedDistance;
-        
         private float m_angle;
         private bool m_angleDirty;
 
         private bool m_selected;
-        private bool m_selectedDirty;
+        private bool m_firstSelected;
 
         public OptionDetails Details
         {
@@ -50,24 +45,26 @@ namespace Anthology
                 if(m_selected == value) { return; }
                 
                 m_selected = value;
-                m_selectedDirty = true;
                 
-                if(m_selected) { OnSelected?.Invoke(); }
+                if(m_selected) { OnSelected?.Invoke(m_firstSelected); }
                 else { OnDeselected?.Invoke(); }
+
+                m_firstSelected = false;
             }
+        }
+
+        public bool FirstSelected
+        {
+            get => m_firstSelected;
+            set => m_firstSelected = value;
         }
 
         public UnityEvent<OptionDetails> OnDetailsChanged;
 
         public UnityEvent<float> OnAngleChanged;
 
-        public UnityEvent OnSelected;
+        public UnityEvent<bool> OnSelected;
         public UnityEvent OnDeselected;
-
-        private void Awake()
-        {
-            if(!m_mover) { m_mover = GetComponent<Mover>(); }
-        }
 
         private void Update()
         {
@@ -78,13 +75,6 @@ namespace Anthology
                 transform.localEulerAngles = angles;
 
                 m_angleDirty = false;
-            }
-            
-            if (m_selectedDirty)
-            {
-                m_mover.TargetPosition = Vector3.forward * (m_selected ? m_selectedDistance : m_unselectedDistance);
-                
-                m_selectedDirty = false;
             }
         }
 

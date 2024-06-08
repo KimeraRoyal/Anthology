@@ -29,7 +29,7 @@ namespace Anthology
             m_menu.OnOptionSelected.AddListener(OnOptionSelected);
         }
 
-        private void OnOptionSelected(int _index)
+        private void OnOptionSelected(int _index, bool _firstSelected)
         {
             var details = m_menu.Options[_index].Details;
             m_text.text = m_field switch

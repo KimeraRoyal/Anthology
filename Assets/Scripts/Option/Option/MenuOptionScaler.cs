@@ -23,17 +23,25 @@ namespace Anthology
             m_option.OnDeselected.AddListener(OnDeselected);
         }
 
-        private void OnSelected()
-            => ChangeScale(m_selectedScale);
+        private void OnSelected(bool _firstSelected)
+            => ChangeScale(m_selectedScale, _firstSelected);
 
         private void OnDeselected()
-            => ChangeScale(m_deselectedScale);
+            => ChangeScale(m_deselectedScale, false);
 
-        private void ChangeScale(float _scale)
+        private void ChangeScale(float _scale, bool _firstSelected)
         {
+            var targetScale = Vector3.one * _scale;
+            
+            if (_firstSelected)
+            {
+                transform.localScale = targetScale;
+                return;
+            }
+            
             if(m_tween is { active: true }) { m_tween.Kill(); }
 
-            m_tween = transform.DOScale(Vector3.one * _scale, m_scaleChangeDuration).SetEase(m_scaleChangeEase);
+            m_tween = transform.DOScale(targetScale, m_scaleChangeDuration).SetEase(m_scaleChangeEase);
         }
     }
 }

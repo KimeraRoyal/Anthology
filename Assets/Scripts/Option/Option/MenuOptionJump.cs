@@ -22,8 +22,10 @@ namespace Anthology
             m_option.OnSelected.AddListener(OnSelected);
         }
 
-        private void OnSelected()
+        private void OnSelected(bool _firstSelected)
         {
+            if(_firstSelected) { return; }
+            
             if (m_tween is { active: true })
             {
                 m_tween.Kill();

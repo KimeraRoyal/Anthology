@@ -16,7 +16,7 @@ namespace Anthology
 
         public IReadOnlyList<MenuOption> Options => m_options;
         
-        public UnityEvent<int> OnOptionSelected;
+        public UnityEvent<int, bool> OnOptionSelected;
 
         private void Start()
         {
@@ -32,21 +32,23 @@ namespace Anthology
                 m_options[i].Angle = 360.0f - theta * i;
 
                 var index = i;
-                m_options[i].OnSelected.AddListener(() => SelectOption(index));
+                m_options[i].OnSelected.AddListener(firstSelected => SelectOption(index, firstSelected));
             }
 
             if(m_options.Length < 1) { return; }
+
+            m_options[0].FirstSelected = true;
             m_options[0].Selected = true;
         }
 
-        private void SelectOption(int _index)
+        private void SelectOption(int _index, bool _firstSelected)
         {
             if(m_selectedIndex == _index) { return; }
 
             if(m_selectedIndex >= 0) { m_options[m_selectedIndex].Selected = false; }
             
             m_selectedIndex = _index;
-            OnOptionSelected?.Invoke(m_selectedIndex);
+            OnOptionSelected?.Invoke(m_selectedIndex, _firstSelected);
         }
     }
 }
