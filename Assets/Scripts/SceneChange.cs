@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -5,10 +6,18 @@ namespace Anthology
 {
     public class SceneChange : MonoBehaviour
     {
-        private string m_queuedScene;
+        [SerializeField] private float m_delay;
         
+        private string m_queuedScene;
+
         public void LoadScene(string _scene)
-            => SceneManager.LoadScene(_scene);
+            => StartCoroutine(LoadSceneWithDelay(_scene));
+
+        private IEnumerator LoadSceneWithDelay(string _scene)
+        {
+            if(m_delay > 0.001f) { yield return new WaitForSeconds(m_delay); }
+            SceneManager.LoadScene(_scene);
+        }
 
         public void LoadScene()
         {
