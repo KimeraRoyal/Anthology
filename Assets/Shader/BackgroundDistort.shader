@@ -57,7 +57,7 @@ Shader "Custom/Background Distortion"
             fixed4 frag (v2f i) : SV_Target
             {
                 const float y = i.uv.y * _Tiling;
-                const float t = (y + _Time * _OffsetSpeed + _OffsetScroll) % 1;
+                const float t = (y + _Time % 1 * _OffsetSpeed + _OffsetScroll);
                 const float offset = sin(t * UNITY_PI * 2);
 
                 const float2 interlaceUV = i.uv * _InterlaceTex_ST.xy;
