@@ -22,6 +22,8 @@ namespace IP1
         [SerializeField] private Transform m_meal;
 
         [SerializeField] private FaceButton[] m_incidentalButtons;
+        [SerializeField] private FaceButton m_nudgeLeftButton;
+        [SerializeField] private FaceButton m_nudgeRightButton;
         [SerializeField] private FaceButton m_startButton;
 
         [SerializeField] private GameObject m_lights;
@@ -56,6 +58,8 @@ namespace IP1
             {
                 button.OnPressedChange += OnIncidentalPressedChange;
             }
+            m_nudgeLeftButton.OnPressedChange += pressed => OnNudgePressedChange(pressed, -1);
+            m_nudgeRightButton.OnPressedChange += pressed => OnNudgePressedChange(pressed, 1);
             m_startButton.OnPressedChange += OnPressedChange;
 
             OnActivated += m_microgame.Clear;
@@ -72,6 +76,17 @@ namespace IP1
             if(!_pressed) { return; }
             
             m_digits.Ticks = Random.Range(m_minTimerValue, m_maxTimerValue);
+        }
+
+        private void OnNudgePressedChange(bool _pressed, int _factor)
+        {
+            if(!_pressed) { return; }
+
+            m_digits.Ticks += _factor;
+            
+            var range = m_maxTimerValue - m_minTimerValue;
+            if (m_digits.Ticks < m_minTimerValue) { m_digits.Ticks += range; }
+            else if (m_digits.Ticks >= m_maxTimerValue) { m_digits.Ticks -= range; }
         }
 
         private void OnPressedChange(bool _pressed)

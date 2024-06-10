@@ -36,6 +36,18 @@ PrefabInstance:
       propertyPath: m_meal
       value: 
       objectReference: {fileID: 8977255100327045710, guid: 79f1fdcedd6c7f54d97b76d4ef1ccacd, type: 3}
+    - target: {fileID: 7697492861839698597, guid: 2665b4281fdd0f3409f4ed92ae56a1bf, type: 3}
+      propertyPath: m_frames.Array.data[0]
+      value: 
+      objectReference: {fileID: -222154660852128963, guid: c89b5cb315f906643bf452599e9c64fe, type: 3}
+    - target: {fileID: 7697492861839698597, guid: 2665b4281fdd0f3409f4ed92ae56a1bf, type: 3}
+      propertyPath: m_frames.Array.data[1]
+      value: 
+      objectReference: {fileID: -6430863638777886342, guid: c89b5cb315f906643bf452599e9c64fe, type: 3}
+    - target: {fileID: 7697492861839698597, guid: 2665b4281fdd0f3409f4ed92ae56a1bf, type: 3}
+      propertyPath: m_frames.Array.data[2]
+      value: 
+      objectReference: {fileID: -5193467036968389572, guid: c89b5cb315f906643bf452599e9c64fe, type: 3}
     - target: {fileID: 7845224376126273740, guid: 2665b4281fdd0f3409f4ed92ae56a1bf, type: 3}
       propertyPath: m_Name
       value: Lunch Game
