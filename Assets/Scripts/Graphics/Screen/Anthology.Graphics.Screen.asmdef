@@ -1,7 +1,7 @@
 {
     "name": "Anthology.Graphics.Screen",
     "rootNamespace": "Anthology",
-    "references": [],
+    "references": ["GUID:195f133d9f77c304a834bbe8423798ff"],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
