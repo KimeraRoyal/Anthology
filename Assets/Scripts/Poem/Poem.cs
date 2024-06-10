@@ -9,4 +9,7 @@ public class Poem : ScriptableObject
     [Title("Poem")]
     [HideLabel] [MultiLineProperty(20)]
     [SerializeField] private string m_text;
+
+    public string Author => m_author;
+    public string Body => m_text;
 }

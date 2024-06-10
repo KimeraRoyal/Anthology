@@ -158,6 +158,7 @@ GameObject:
   - component: {fileID: 628790597696214887}
   - component: {fileID: 5460531924272293732}
   - component: {fileID: 6475491678625204204}
+  - component: {fileID: 4206367254925169201}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -239,7 +240,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
+  m_fontSize: 24
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 0
@@ -281,6 +282,20 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &4206367254925169201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1592313998824273456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 815d511d85cf98846b5d136743cda9d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_poem: {fileID: 11400000, guid: 61b1b1a1a35ec2c409b41425dd23a464, type: 2}
+  m_type: 2
 --- !u!1 &1753406234464680649
 GameObject:
   m_ObjectHideFlags: 0
@@ -609,6 +624,7 @@ GameObject:
   - component: {fileID: 1547665583954938312}
   - component: {fileID: 6314415379567506089}
   - component: {fileID: 6454537574973110345}
+  - component: {fileID: 4694916238474534147}
   m_Layer: 5
   m_Name: Title
   m_TagString: Untagged
@@ -732,6 +748,20 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &4694916238474534147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6612361298580479156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 815d511d85cf98846b5d136743cda9d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_poem: {fileID: 11400000, guid: 61b1b1a1a35ec2c409b41425dd23a464, type: 2}
+  m_type: 0
 --- !u!1 &7929458411556281597
 GameObject:
   m_ObjectHideFlags: 0
@@ -743,6 +773,7 @@ GameObject:
   - component: {fileID: 8655499317183232612}
   - component: {fileID: 2065224886192946187}
   - component: {fileID: 492879443480805658}
+  - component: {fileID: 7473565399161805093}
   m_Layer: 5
   m_Name: Author
   m_TagString: Untagged
@@ -866,6 +897,20 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &7473565399161805093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7929458411556281597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 815d511d85cf98846b5d136743cda9d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_poem: {fileID: 11400000, guid: 61b1b1a1a35ec2c409b41425dd23a464, type: 2}
+  m_type: 1
 --- !u!1 &8956968319026615965
 GameObject:
   m_ObjectHideFlags: 0
