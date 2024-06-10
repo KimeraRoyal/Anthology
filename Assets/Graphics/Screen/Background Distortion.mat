@@ -45,7 +45,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _InterlaceTex:
         m_Texture: {fileID: 2800000, guid: 23829b9670c8d8c409eabb9075890b96, type: 3}
-        m_Scale: {x: 1, y: 270}
+        m_Scale: {x: 0, y: 540}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 0}
@@ -75,13 +75,14 @@ Material:
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
-    - _Offset: 0.0025
-    - _OffsetSpeed: 3.8
+    - _Offset: 0
+    - _OffsetScroll: 0
+    - _OffsetSpeed: 0
     - _Parallax: 0.02
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
-    - _Tiling: 8.57
+    - _Tiling: 0
     - _TilingX: 1
     - _TilingY: 2
     - _UVSec: 0

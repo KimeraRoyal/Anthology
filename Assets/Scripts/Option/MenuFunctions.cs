@@ -1,6 +1,7 @@
 using System;
 using IP1;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace Anthology
 {
@@ -10,6 +11,9 @@ namespace Anthology
         private FadeImageInOut m_fader;
 
         private bool m_loadingGame;
+
+        public UnityEvent OnGameLoaded;
+        public UnityEvent OnPoemLoaded;
 
         private void Awake()
         {
@@ -23,6 +27,8 @@ namespace Anthology
             
             m_sceneChange.QueueScene(_gameName);
             m_fader.Fade(true);
+            
+            OnGameLoaded?.Invoke();
 
             m_loadingGame = true;
         }
