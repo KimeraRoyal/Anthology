@@ -8,7 +8,6 @@ namespace Anthology
     [Serializable]
     public abstract class TweenValue<T>
     {
-        [SerializeField] private bool m_animate = true;
         [SerializeField] private T m_target;
         
         [SerializeField] private float m_duration = 1.0f;
