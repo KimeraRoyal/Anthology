@@ -12,38 +12,34 @@ public class PoemLabel : MonoBehaviour
         Body
     }
 
+    private PoemWindow m_window;
+
     private TMP_Text m_text;
 
-    [SerializeField] private Poem m_poem;
     [SerializeField] private LabelType m_type;
-
-    private bool m_dirty;
 
     private void Awake()
     {
+        m_window = GetComponentInParent<PoemWindow>();
+        
         m_text = GetComponent<TMP_Text>();
         
-        m_dirty = true;
+        m_window.OnPoemChanged.AddListener(UpdateLabel);
     }
 
     private void Start()
-        => UpdateLabel();
+        => UpdateLabel(m_window.Poem);
 
-    private void Update()
-        => UpdateLabel();
-
-    private void UpdateLabel()
+    private void UpdateLabel(Poem _poem)
     {
-        if(!m_dirty) { return; }
-
+        if(!_poem) { return; }
+        
         m_text.text = m_type switch
         {
-            LabelType.Title => m_poem.name,
-            LabelType.Author => m_poem.Author,
-            LabelType.Body => m_poem.Body,
+            LabelType.Title => _poem.name,
+            LabelType.Author => _poem.Author,
+            LabelType.Body => _poem.Body,
             _ => throw new ArgumentOutOfRangeException()
         };
-
-        m_dirty = false;
     }
 }

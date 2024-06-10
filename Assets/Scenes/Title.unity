@@ -343,7 +343,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 1
+  m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -439,22 +439,28 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &510104226 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4922563850902427495, guid: 6ad168bed7c61f84885858b6b24c92d1, type: 3}
+  m_PrefabInstance: {fileID: 6169503570785405462}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &510104233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 510104226}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7048e79604908a549ba002c1abc99f3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &535576775 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4457196642001609388, guid: 6ad168bed7c61f84885858b6b24c92d1, type: 3}
   m_PrefabInstance: {fileID: 6169503570785405462}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &535576776 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 224408001587827069, guid: 6ad168bed7c61f84885858b6b24c92d1, type: 3}
-  m_PrefabInstance: {fileID: 6169503570785405462}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0140618d057fd5647aed02ac25923a1f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!224 &652433322 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5151963846549443573, guid: 8c005bb5de6177f4eb49e77a77a92abd, type: 3}
@@ -6110,7 +6116,7 @@ PrefabInstance:
     - target: {fileID: 5290723306618484712, guid: 389dc6a1fe9edf34fa903a138a2d568e, type: 3}
       propertyPath: OnPoemLoaded.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 535576776}
+      objectReference: {fileID: 1321630772}
     - target: {fileID: 5290723306618484712, guid: 389dc6a1fe9edf34fa903a138a2d568e, type: 3}
       propertyPath: OnPoemLoaded.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
@@ -6273,41 +6279,33 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 243371205}
     m_Modifications:
-    - target: {fileID: 224408001587827069, guid: 6ad168bed7c61f84885858b6b24c92d1, type: 3}
-      propertyPath: m_enabled
+    - target: {fileID: 628790597696214887, guid: 6ad168bed7c61f84885858b6b24c92d1, type: 3}
+      propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 628790597696214887, guid: 6ad168bed7c61f84885858b6b24c92d1, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 628790597696214887, guid: 6ad168bed7c61f84885858b6b24c92d1, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 628790597696214887, guid: 6ad168bed7c61f84885858b6b24c92d1, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 663
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 628790597696214887, guid: 6ad168bed7c61f84885858b6b24c92d1, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 26.82
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 628790597696214887, guid: 6ad168bed7c61f84885858b6b24c92d1, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 341.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 628790597696214887, guid: 6ad168bed7c61f84885858b6b24c92d1, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -23.41
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 973686240567454976, guid: 6ad168bed7c61f84885858b6b24c92d1, type: 3}
       propertyPath: m_Name
       value: Poem UI
-      objectReference: {fileID: 0}
-    - target: {fileID: 1753406234464680649, guid: 6ad168bed7c61f84885858b6b24c92d1, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4457196642001609388, guid: 6ad168bed7c61f84885858b6b24c92d1, type: 3}
       propertyPath: m_Pivot.x
@@ -6316,6 +6314,10 @@ PrefabInstance:
     - target: {fileID: 4457196642001609388, guid: 6ad168bed7c61f84885858b6b24c92d1, type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4457196642001609388, guid: 6ad168bed7c61f84885858b6b24c92d1, type: 3}
+      propertyPath: m_RootOrder
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 4457196642001609388, guid: 6ad168bed7c61f84885858b6b24c92d1, type: 3}
       propertyPath: m_AnchorMax.x
@@ -6389,40 +6391,43 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6475491678625204204, guid: 6ad168bed7c61f84885858b6b24c92d1, type: 3}
-      propertyPath: m_fontSizeBase
-      value: 24
-      objectReference: {fileID: 0}
-    - target: {fileID: 6475491678625204204, guid: 6ad168bed7c61f84885858b6b24c92d1, type: 3}
-      propertyPath: m_fontColor32.rgba
-      value: 4294967295
-      objectReference: {fileID: 0}
     - target: {fileID: 8385550369002432636, guid: 6ad168bed7c61f84885858b6b24c92d1, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8385550369002432636, guid: 6ad168bed7c61f84885858b6b24c92d1, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8750217191024603337, guid: 6ad168bed7c61f84885858b6b24c92d1, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 46.82
+      value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8864933063269064585, guid: 6ad168bed7c61f84885858b6b24c92d1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1321630775}
+    - target: {fileID: 8864933063269064585, guid: 6ad168bed7c61f84885858b6b24c92d1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1321630772}
     - target: {fileID: 8936625413745044464, guid: 6ad168bed7c61f84885858b6b24c92d1, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8936625413745044464, guid: 6ad168bed7c61f84885858b6b24c92d1, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8936625413745044464, guid: 6ad168bed7c61f84885858b6b24c92d1, type: 3}
       propertyPath: m_SizeDelta.x
-      value: -17
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4922563850902427495, guid: 6ad168bed7c61f84885858b6b24c92d1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 510104233}
   m_SourcePrefab: {fileID: 100100000, guid: 6ad168bed7c61f84885858b6b24c92d1, type: 3}

@@ -3,9 +3,24 @@ using UnityEngine.Events;
 
 public class PoemWindow : MonoBehaviour
 {
+    private Poem m_poem;
+    
     private Transform m_child;
 
     [SerializeField] private bool m_enabled;
+
+    public Poem Poem
+    {
+        get => m_poem;
+        set
+        {
+            if(m_poem == value) { return; }
+
+            m_poem = value;
+            
+            OnPoemChanged?.Invoke(m_poem);
+        }
+    }
 
     public bool Enabled
     {
@@ -20,6 +35,8 @@ public class PoemWindow : MonoBehaviour
             OnEnabledChanged?.Invoke(m_enabled);
         }
     }
+
+    public UnityEvent<Poem> OnPoemChanged;
 
     public UnityEvent<bool> OnEnabledChanged;
     public UnityEvent OnEnabled;

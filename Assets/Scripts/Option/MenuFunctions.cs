@@ -10,6 +10,9 @@ namespace Anthology
         private SceneChange m_sceneChange;
         private FadeImageInOut m_fader;
 
+        private PoemWindow m_poemWindow;
+        private PoemSwitcher m_poems;
+
         private bool m_loadingGame;
         private bool m_loadingPoem;
 
@@ -20,6 +23,11 @@ namespace Anthology
         {
             m_sceneChange = FindObjectOfType<SceneChange>();
             m_fader = FindObjectOfType<FadeImageInOut>();
+            
+            m_poemWindow = FindObjectOfType<PoemWindow>();
+            m_poems = FindObjectOfType<PoemSwitcher>();
+
+            m_poemWindow.OnDisabled.AddListener(OnPoemWindowDisabled);
         }
 
         public void LoadGame(string _gameName)
@@ -38,9 +46,15 @@ namespace Anthology
         {
             if(m_loadingGame || m_loadingPoem) { return; }
             
+            m_poems.ShowPoem(_poemName);
             OnPoemLoaded?.Invoke();
             
             m_loadingPoem = true;
+        }
+
+        private void OnPoemWindowDisabled()
+        {
+            m_loadingPoem = false;
         }
     }
 }
