@@ -40,4 +40,10 @@ public class PoemWindow : MonoBehaviour
 
     private void EnableChild(bool _enabled)
         => m_child.gameObject.SetActive(m_enabled);
+
+    public void Show()
+        => Enabled = true;
+
+    public void Hide()
+        => Enabled = false;
 }
