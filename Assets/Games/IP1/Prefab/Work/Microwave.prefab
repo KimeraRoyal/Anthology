@@ -629,7 +629,7 @@ Transform:
   - {fileID: 7469843249021039402}
   - {fileID: 8897917346454610688}
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &151622638999291647
 MonoBehaviour:
@@ -1633,9 +1633,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_frames:
-  - {fileID: -232261466071193897, guid: c89b5cb315f906643bf452599e9c64fe, type: 3}
-  - {fileID: -7854255921111383097, guid: c89b5cb315f906643bf452599e9c64fe, type: 3}
-  - {fileID: -6815707986125908391, guid: c89b5cb315f906643bf452599e9c64fe, type: 3}
+  - {fileID: -222154660852128963, guid: c89b5cb315f906643bf452599e9c64fe, type: 3}
+  - {fileID: -6430863638777886342, guid: c89b5cb315f906643bf452599e9c64fe, type: 3}
+  - {fileID: -5193467036968389572, guid: c89b5cb315f906643bf452599e9c64fe, type: 3}
   m_animate: 1
   m_frameTime: 0.6
   m_frameTimeVariance: 0
