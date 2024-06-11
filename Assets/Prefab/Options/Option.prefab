@@ -542,8 +542,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1790043719
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 8473fa2f5d48db9438040099919d7e8a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -617,7 +617,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6866593416145675041}
-  - component: {fileID: 2828840265167471489}
   - component: {fileID: 214730661100092863}
   m_Layer: 17
   m_Name: Anchor
@@ -642,22 +641,6 @@ Transform:
   m_Father: {fileID: 5095220067972041363}
   m_RootOrder: -2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2828840265167471489
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8120414404068040823}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84365e211bab1734da4c4a3dfbd721a8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_useLocalPosition: 1
-  m_factor: {x: 1, y: 1, z: 1}
-  m_offset: {x: 0, y: 0, z: 0}
-  m_movementSmoothTime: 0.2
 --- !u!114 &214730661100092863
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -672,3 +655,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_deselectedDistance: 4
   m_selectedDistance: 6.5
+  m_movementDuration: 0.65
+  m_movementEase: 7

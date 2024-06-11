@@ -32,6 +32,8 @@ namespace Anthology
 
         public IReadOnlyList<MenuOption> Options => m_options;
         public MenuOption SelectedOption => m_options[m_selectedIndex];
+
+        public UnityEvent OnOptionsInitialized;
         
         public UnityEvent<int, bool> OnOptionSelected;
 
@@ -46,6 +48,7 @@ namespace Anthology
             
             for (var i = 0; i < optionCount; i++)
             {
+                
                 m_options[i] = Instantiate(m_optionPrefab, transform);
                 m_options[i].Details = m_optionDetails[i].OptionDetails;
                 m_options[i].Angle = 360.0f - theta * i;
@@ -54,10 +57,13 @@ namespace Anthology
                 m_options[i].OnSelected.AddListener(firstSelected => SelectOption(index, firstSelected));
             }
 
-            if(m_options.Length < 1) { return; }
-
-            m_options[m_menuState.SelectedEntry].FirstSelected = true;
-            m_options[m_menuState.SelectedEntry].Selected = true;
+            if (m_options.Length > 0)
+            {
+                m_options[m_menuState.SelectedEntry].FirstSelected = true;
+                m_options[m_menuState.SelectedEntry].Selected = true;
+            }
+            
+            OnOptionsInitialized?.Invoke();
         }
 
         private void SelectOption(int _index, bool _firstSelected)

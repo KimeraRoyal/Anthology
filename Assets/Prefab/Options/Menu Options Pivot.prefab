@@ -160,6 +160,9 @@ MonoBehaviour:
             m_BoolArgument: 0
           m_CallState: 2
   m_optionPrefab: {fileID: 3168172312869538556, guid: a8f047985d7e3324e979ff8983387221, type: 3}
+  OnOptionsInitialized:
+    m_PersistentCalls:
+      m_Calls: []
   OnOptionSelected:
     m_PersistentCalls:
       m_Calls: []
@@ -185,7 +188,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
