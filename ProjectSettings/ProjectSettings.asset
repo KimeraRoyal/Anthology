@@ -18,7 +18,7 @@ PlayerSettings:
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.14117648, g: 0.10980393, b: 0.18039216, a: 1}
   m_ShowUnitySplashScreen: 1
-  m_ShowUnitySplashLogo: 0
+  m_ShowUnitySplashLogo: 1
   m_SplashScreenOverlayOpacity: 1
   m_SplashScreenAnimation: 0
   m_SplashScreenLogoStyle: 1
@@ -40,10 +40,14 @@ PlayerSettings:
     width: 1
     height: 1
   m_SplashScreenLogos:
+  - logo: {fileID: 10404, guid: 0000000000000000f000000000000000, type: 0}
+    duration: 2
   - logo: {fileID: 21300000, guid: 41f6176b2e3b6b84c81c44de3f25d5e2, type: 3}
-    duration: 3
+    duration: 2
   - logo: {fileID: 21300000, guid: 7e69df09410e17d4383952d2e1bd7fee, type: 3}
-    duration: 3
+    duration: 2
+  - logo: {fileID: 21300000, guid: 6468cfa7264e43a4a9cb7578b79156eb, type: 3}
+    duration: 5
   m_VirtualRealitySplashScreen: {fileID: 0}
   m_HolographicTrackingLossScreen: {fileID: 0}
   defaultScreenWidth: 1920
@@ -919,7 +923,7 @@ PlayerSettings:
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
   metroPackageName: Anthology
-  metroPackageVersion: 
+  metroPackageVersion: 1.0.0.0
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
@@ -927,7 +931,7 @@ PlayerSettings:
   metroCertificateNotAfter: 0000000000000000
   metroApplicationDescription: Anthology
   wsaImages: {}
-  metroTileShortName: 
+  metroTileShortName: Parabolic Emotion
   metroTileShowName: 0
   metroMediumTileShowName: 0
   metroLargeTileShowName: 0
