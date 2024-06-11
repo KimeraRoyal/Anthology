@@ -31,6 +31,8 @@ namespace Anthology
         private int m_selectedIndex = -1;
 
         public IReadOnlyList<MenuOption> Options => m_options;
+
+        public int SelectedOptionIndex => m_selectedIndex;
         public MenuOption SelectedOption => m_options[m_selectedIndex];
 
         public UnityEvent OnOptionsInitialized;
