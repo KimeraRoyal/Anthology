@@ -6177,6 +6177,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1321630775}
     - target: {fileID: 5290723306618484712, guid: 389dc6a1fe9edf34fa903a138a2d568e, type: 3}
+      propertyPath: OnGameLoaded.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1321630772}
+    - target: {fileID: 5290723306618484712, guid: 389dc6a1fe9edf34fa903a138a2d568e, type: 3}
       propertyPath: OnPoemLoaded.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1321630775}
