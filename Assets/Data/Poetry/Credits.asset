@@ -13,4 +13,129 @@ MonoBehaviour:
   m_Name: Credits
   m_EditorClassIdentifier: 
   m_author: 
-  m_text: 
+  m_image: {fileID: 21300000, guid: d887d6736333821439a48e0a2ef4fc14, type: 3}
+  m_text: 'by Kimera Royal
+
+
+    <style="H2">CREDITS</style>
+
+    Game(s) by Kimera
+    Royal
+
+    Dressup Doll / Clothes by Lyozoan
+
+    "Anticipation" by Beatrice
+    Timken
+
+
+    <style="H2">SPECIAL THANKS</style>
+
+    Fenn, Kira, and Zoe
+
+    Harrier
+    for letting me use photos of your bedroom
+
+    Khoshekh, Lyozoan, Owen, and Sam
+
+    Everybody
+    who participated in my playtest / interview sessions
+
+    All other friends and
+    family :)
+
+
+    <style="H2">TOOLS</style>
+
+    Made in Unity 2022.3.4f1
+
+    DOTween
+    (HOTween v2) 1.2.765 by Demigiant
+
+    Odin Inspector and Serializer 3.2.1.0
+    by Sirenix
+
+
+    Sound Engine: FMOD Studio 2.02.22 by Firelight Technologies
+    Pty Ltd
+
+
+    <style="H2">PUBLIC ASSETS</style>
+
+    "Kloppenheim 07 (Pure Sky)
+    HDRI" by Greg Zaal and Jarod Guest on Polyhaven
+
+
+    The following sound effects
+    were sourced from freesound.org:
+
+    "Irritating flourescent light hum" by pfranzen
+
+    "Kitchen
+    Wall Clock Ticking 2" by giddster
+
+
+    "hungarian post office ambience - a busy
+    day" by Frigus_XIII
+
+    "kbh cafe short.wav" by chimerical
+
+
+    "thick-stamp-sub.wav"
+    by newagesoup
+
+    "Stamp" by vladnegrila
+
+    "stamp.aif" by queensize
+
+    <color=#FF0000>"Pack:
+    OFFICE and PAPERWORK sounds" by Robinhood76</color>
+
+
+    "microwave.wav" by
+    Cambra
+
+    "Juliet Clarke Microwave buttons.wav" by julietclarke
+
+    "Microwave.aif"
+    by JasonElrod
+
+    "Microwave; Beeps.wav" by Crovic
+
+    "Microwave close.WAV"
+    by rpew1
+
+    "Button Clicking 2 (Single)" by Sheyvan
+
+    "Heater Fan Snap Button
+    1_4" by Joao_Janz
+
+
+    "sliding paper on table.wav" by 123jorre456
+
+    "PaperSlide.wav"
+    by eyesonlegs
+
+
+    "Pill capsule opening pill dropping onto glass.wav" by JanIsAGuy
+
+    "Swirling
+    T Shirt 1.wav" by F.M.Audio
+
+    "Swirling T Shirt 2.wav" by F.M.Audio
+
+    "Swirling
+    T Shirt 3.wav" by F.M.Audio
+
+
+    "Pack: Front Door and Kitchen" by jasinski
+
+    "creaky
+    door 5.wav" by clare_wells
+
+    "DoorCreaking11.flac" by Zabuhailo
+
+    "wooden
+    door opening and closing" by reconsider59
+
+    "Door Handles in various small
+    rooms" by RobertMThomas'
