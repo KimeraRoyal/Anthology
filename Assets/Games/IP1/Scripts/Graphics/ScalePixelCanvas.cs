@@ -35,7 +35,10 @@ namespace IP1
 
         private void Scale()
         {
-            var factor = Screen.height / m_heightToFit;
+            var factorInteger = Screen.height / m_heightToFit;
+            var factor = (float) factorInteger;
+            if (factorInteger < 1) { factor = (float) Screen.height / m_heightToFit; }
+            
             m_scaler.scaleFactor = factor;
         }
     }
