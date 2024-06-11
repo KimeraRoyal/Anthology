@@ -1,26 +1,9 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-public class PoemWindow : MonoBehaviour
+public class Window : MonoBehaviour
 {
-    private Poem m_poem;
-    
-    private Transform m_child;
-
     [SerializeField] private bool m_enabled;
-
-    public Poem Poem
-    {
-        get => m_poem;
-        set
-        {
-            if(m_poem == value) { return; }
-
-            m_poem = value;
-            
-            OnPoemChanged?.Invoke(m_poem);
-        }
-    }
 
     public bool Enabled
     {
@@ -36,17 +19,9 @@ public class PoemWindow : MonoBehaviour
         }
     }
 
-    public UnityEvent<Poem> OnPoemChanged;
-
     public UnityEvent<bool> OnEnabledChanged;
     public UnityEvent OnEnabled;
     public UnityEvent OnDisabled;
-
-    private void Awake()
-    {
-        m_child = transform.GetChild(0);
-        OnEnabledChanged.AddListener(EnableChild);
-    }
 
     private void Start()
     {
@@ -54,9 +29,6 @@ public class PoemWindow : MonoBehaviour
         m_enabled = !wasEnabled;
         Enabled = wasEnabled;
     }
-
-    private void EnableChild(bool _enabled)
-        => m_child.gameObject.SetActive(m_enabled);
 
     public void Show()
         => Enabled = true;

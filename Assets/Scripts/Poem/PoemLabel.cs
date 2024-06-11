@@ -12,7 +12,7 @@ public class PoemLabel : MonoBehaviour
         Body
     }
 
-    private PoemWindow m_window;
+    private PoemSwitcher m_switcher;
 
     private TMP_Text m_text;
 
@@ -20,15 +20,15 @@ public class PoemLabel : MonoBehaviour
 
     private void Awake()
     {
-        m_window = GetComponentInParent<PoemWindow>();
+        m_switcher = GetComponentInParent<PoemSwitcher>();
         
         m_text = GetComponent<TMP_Text>();
         
-        m_window.OnPoemChanged.AddListener(UpdateLabel);
+        m_switcher.OnPoemChanged.AddListener(UpdateLabel);
     }
 
     private void Start()
-        => UpdateLabel(m_window.Poem);
+        => UpdateLabel(m_switcher.Poem);
 
     private void UpdateLabel(Poem _poem)
     {
