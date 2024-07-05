@@ -1,0 +1,60 @@
+Holding Escape will return you to the title screen from within a game. On the title screen, holding Escape will close the game.
+Every other part of the game is controlled with the mouse. 
+
+-- Credits --
+Game(s) by Kimera Royal
+Dressup Doll / Clothes by Lyozoan
+"Anticipation" by Beatrice Timken
+
+-- Special Thanks --
+Fenn, Kira, and Zoe
+Harrier for letting me use photos of your bedroom
+Khoshekh, Lyozoan, Natalie, Owen, and Sam
+Everybody who participated in my playtest / interview sessions
+All other friends and family :)
+
+-- Tools --
+Made in Unity 2022.3.4f1
+DOTween (HOTween v2) 1.2.765 by Demigiant
+Odin Inspector and Serializer 3.2.1.0 by Sirenix
+
+Sound Engine: FMOD Studio 2.02.22 by Firelight Technologies Pty Ltd
+
+-- Public Assets --
+Kloppenheim 07 (Pure Sky) HDRI by Greg Zaal & Jarod Guest -- https://polyhaven.com/a/kloppenheim_07_puresky -- License: Creative Commons 0
+
+Irritating flourescent light hum by pfranzen -- https://freesound.org/s/328013/ -- License: Attribution 4.0
+Wall Clock Ticking.wav by straget -- https://freesound.org/s/405423/ -- License: Attribution 4.0
+Kitchen Wall Clock Ticking 2 by giddster -- https://freesound.org/s/434841/ -- License: Creative Commons 0
+
+hungarian post office ambience by Frigus_XIII - a busy day -- https://freesound.org/people/Frigus_XIII/sounds/460082/ -- License: Creative Commons 0
+kbh cafe short.wav by chimerical -- https://freesound.org/people/chimerical/sounds/104279/ -- License: Creative Commons 0
+
+thick-stamp-sub.wav by newagesoup -- https://freesound.org/people/newagesoup/sounds/347323/ -- License: Attribution 4.0
+Stamp by vladnegrila -- https://freesound.org/people/vladnegrila/sounds/339966/ -- License: Creative Commons 0
+stamp.aif by queensize -- https://freesound.org/people/queensize/sounds/33310/ -- License: Creative Commons 0
+Pack: OFFICE and PAPERWORK sounds by Robinhood76 -- https://freesound.org/people/Robinhood76/packs/4024/ -- License: Attribution NonCommercial
+
+microwave.wav by Cambra -- https://freesound.org/people/Cambra/sounds/102692/ -- License: Creative Commons 0
+Juliet Clarke Microwave buttons.wav by julietclarke -- https://freesound.org/people/julietclarke/sounds/444211/ -- License: Creative Commons 0
+Microwave.aif by JasonElrod -- https://freesound.org/people/JasonElrod/sounds/85458/ -- License: Attribution 3.0
+Microwave; Beeps.wav by Crovic -- https://freesound.org/people/Crovic/sounds/661937/ -- License: Creative Commons 0
+Microwave close.WAV by rpew1 -- https://freesound.org/people/rpew1/sounds/108469/ -- License: Creative Commons 0
+Button Clicking 2 (Single) by Sheyvan -- https://freesound.org/people/Sheyvan/sounds/494490/ -- License: Creative Commons 0
+Heater Fan Snap Button 1_4 by Joao_Janz -- https://freesound.org/people/Joao_Janz/sounds/477619/ -- License: Creative Commons 0
+
+sliding paper on table.wav by 123jorre456 -- https://freesound.org/people/123jorre456/sounds/46631/ -- License: Creative Commons 0
+PaperSlide.wav by eyesonlegs -- https://freesound.org/people/eyesonlegs/sounds/464302/ -- License: Creative Commons 0
+
+Pill capsule opening pill dropping onto glass.wav by JanIsAGuy -- https://freesound.org/people/JanIsAGuy/sounds/430299/ -- License: Creative Commons 0
+Swirling T Shirt 1.wav by F.M.Audio -- https://freesound.org/people/F.M.Audio/sounds/563194/ -- License: Attribution 4.0
+Swirling T Shirt 2.wav by F.M.Audio -- https://freesound.org/people/F.M.Audio/sounds/563193/ -- License: Attribution 4.0
+Swirling T Shirt 3.wav by F.M.Audio -- https://freesound.org/people/F.M.Audio/sounds/563192/ -- License: Attribution 4.0
+
+Pack: Front Door and Kitchen by jasinski -- https://freesound.org/people/jasinski/packs/7112/ -- License: Creative Commons 0
+creaky door 5.wav by clare_wells -- https://freesound.org/people/clare_wells/sounds/195677/ -- License: Attribution 3.0
+DoorCreaking11.flac by Zabuhailo -- https://freesound.org/people/Zabuhailo/sounds/214082/ -- License: Attribution 4.0
+wooden door opening and closing by reconsider59 -- https://freesound.org/people/reconsider59/sounds/397992/ -- License: Creative Commons 0
+Door Handles in various small rooms by RobertMThomas -- https://freesound.org/people/RobertMThomas/sounds/192568/ -- License: Creative Commons 0
+
+Swoosh Metal Rod Swing Sound made with Bamboo Stick by qubodup -- https://freesound.org/people/qubodup/sounds/60006/ -- License: Creative Commons 0

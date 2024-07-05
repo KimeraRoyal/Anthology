@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5950462930070972967}
   - component: {fileID: 5290723306618484712}
   - component: {fileID: 3378925438813940231}
+  - component: {fileID: 1986056826223997279}
   m_Layer: 17
   m_Name: Menu Options
   m_TagString: Untagged
@@ -247,6 +248,46 @@ MonoBehaviour:
   m_defaultAngle: 180
   m_rotateDuration: 0.4
   m_rotateEase: 1
+--- !u!114 &1986056826223997279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3138299496146832085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7716a1fc8eff4044680485e39e5e7f0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_menuMoveSound:
+    Guid:
+      Data1: 1725580732
+      Data2: 1314909998
+      Data3: 2114274190
+      Data4: 1496518218
+    Path: event:/Menu/Swoosh
+  m_menuMoveSoundShort:
+    Guid:
+      Data1: 1223643448
+      Data2: 1082107538
+      Data3: -258491209
+      Data4: -923186011
+    Path: event:/Menu/Swoosh Short
+  m_gamePlayedSound:
+    Guid:
+      Data1: 105076345
+      Data2: 1250558522
+      Data3: -174651006
+      Data4: 105017790
+    Path: event:/Menu/Game Start
+  m_poemPlayedSound:
+    Guid:
+      Data1: 1150218656
+      Data2: 1146473215
+      Data3: -2107997764
+      Data4: 10358324
+    Path: event:/Menu/Poem Start
 --- !u!1 &8490663636127086480
 GameObject:
   m_ObjectHideFlags: 0
