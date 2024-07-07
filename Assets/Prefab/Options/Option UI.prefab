@@ -828,7 +828,7 @@ MonoBehaviour:
       Data2: 1240776316
       Data3: 836826798
       Data4: 386633616
-    Path: event:/Menu/Hover
+    Path: event:/Menu/Button/Hover
   m_retrigger: 1
 --- !u!1001 &7181146931445419057
 PrefabInstance:

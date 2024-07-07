@@ -266,28 +266,28 @@ MonoBehaviour:
       Data2: 1314909998
       Data3: 2114274190
       Data4: 1496518218
-    Path: event:/Menu/Swoosh
+    Path: event:/Menu/Orb/Swoosh
   m_menuMoveSoundShort:
     Guid:
       Data1: 1223643448
       Data2: 1082107538
       Data3: -258491209
       Data4: -923186011
-    Path: event:/Menu/Swoosh Short
+    Path: event:/Menu/Orb/Swoosh Short
   m_gamePlayedSound:
     Guid:
       Data1: 105076345
       Data2: 1250558522
       Data3: -174651006
       Data4: 105017790
-    Path: event:/Menu/Game Start
+    Path: event:/Menu/Button/Game Start
   m_poemPlayedSound:
     Guid:
       Data1: 1150218656
       Data2: 1146473215
       Data3: -2107997764
       Data4: 10358324
-    Path: event:/Menu/Poem Start
+    Path: event:/Menu/Button/Poem Start
 --- !u!1 &8490663636127086480
 GameObject:
   m_ObjectHideFlags: 0

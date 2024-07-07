@@ -228,7 +228,7 @@ MonoBehaviour:
       Data2: 1180392190
       Data3: 1404547510
       Data4: 986384869
-    Path: event:/Menu/Select
+    Path: event:/Menu/Button/Select
   Event: 
   PlayEvent: 19
   StopEvent: 0
