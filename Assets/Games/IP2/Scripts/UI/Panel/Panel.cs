@@ -35,6 +35,9 @@ namespace IP2
 
         private Sequence m_sizeChangeSequence;
 
+        public Action OnOpenAnimationStarted;
+        public Action OnCloseAnimationStarted;
+
         public Action OnOpenAnimationCompleted;
         public Action OnCloseAnimationCompleted;
 
@@ -87,8 +90,12 @@ namespace IP2
             var heightOffset = m_open ? m_openHeightOffset : m_closeHeightOffset;
             var heightDuration = m_open ? m_openHeightDuration : m_closeHeightDuration;
             var heightEase = m_open ? m_openHeightEase : m_closeHeightEase;
+            
+            var firstOffset = Mathf.Min(widthOffset, heightOffset);
+            var startCallback = m_open ? OnOpenAnimationStarted : OnCloseAnimationStarted;
 
             m_sizeChangeSequence = DOTween.Sequence();
+            m_sizeChangeSequence.InsertCallback(firstOffset, () => startCallback?.Invoke());
             m_sizeChangeSequence.Insert(widthOffset, DOTween.To(() => m_openFactor.x, _x => m_openFactor.x = _x, openFactor.x, widthDuration).SetEase(widthEase));
             m_sizeChangeSequence.Insert(heightOffset, DOTween.To(() => m_openFactor.y, _y => m_openFactor.y = _y, openFactor.y, heightDuration).SetEase(heightEase));
             m_sizeChangeSequence.AppendCallback(AnimationCompleted);

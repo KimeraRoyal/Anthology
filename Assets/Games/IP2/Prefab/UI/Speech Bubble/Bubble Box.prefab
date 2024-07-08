@@ -16,6 +16,8 @@ GameObject:
   - component: {fileID: 6601516901671743221}
   - component: {fileID: 828322536055134795}
   - component: {fileID: 7398062874481586598}
+  - component: {fileID: 3769413783570289839}
+  - component: {fileID: 1330725607617290735}
   m_Layer: 13
   m_Name: Bubble Box
   m_TagString: Untagged
@@ -37,6 +39,7 @@ RectTransform:
   m_Children:
   - {fileID: 2837990982157515439}
   m_Father: {fileID: 0}
+  m_RootOrder: -2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -161,6 +164,49 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
   m_EffectDistance: {x: 8, y: -8}
   m_UseGraphicAlpha: 1
+--- !u!114 &3769413783570289839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1441049297257122866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -223208424
+      Data2: 1142036949
+      Data3: -928586579
+      Data4: 2043346005
+    Path: event:/Find the Main Character/Bubble
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  AllowNonRigidbodyDoppler: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &1330725607617290735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1441049297257122866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5bfd6ae6d9fa83469769a6ba076dabe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5598374528904757060
 GameObject:
   m_ObjectHideFlags: 0
@@ -191,6 +237,7 @@ RectTransform:
   m_Children:
   - {fileID: 5101279594628183212}
   m_Father: {fileID: 4785402952585350770}
+  m_RootOrder: -2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -228,6 +275,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2837990982157515439}
+  m_RootOrder: -2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
