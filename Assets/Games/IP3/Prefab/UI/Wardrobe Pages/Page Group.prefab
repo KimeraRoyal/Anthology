@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4856674314900135725}
   - component: {fileID: 5123335321135485819}
   - component: {fileID: 8595731609025137332}
+  - component: {fileID: 2396404382300022463}
   m_Layer: 5
   m_Name: Page Group
   m_TagString: Untagged
@@ -31,7 +32,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: -2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -75,3 +76,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_buttonPrefab: {fileID: 5911979607919822446, guid: 020603054954e1d48934f9cb91f25731, type: 3}
+--- !u!114 &2396404382300022463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7383776204178225679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0899f26f4e446d14a911eae2c32b4279, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_sounds:
+  - Guid:
+      Data1: -1085466912
+      Data2: 1287424297
+      Data3: -437182028
+      Data4: 1602217865
+    Path: event:/Dressup/Button Hover
+  - Guid:
+      Data1: 1979864693
+      Data2: 1082178056
+      Data3: 1695998093
+      Data4: 342850040
+    Path: event:/Dressup/Button Click
+  m_indexParameterName: Button Index
+  m_retrigger: 1
