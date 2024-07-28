@@ -774,9 +774,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae9fa5de92ae6ae4db1c0d07b735af77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_skipFrames: 2
-  m_closeTime: 1
-  m_resetSpeed: 1
   OnPaused:
     m_PersistentCalls:
       m_Calls:
@@ -1937,9 +1934,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_controlChildrenEnabled: 1
   m_ignoreTimescale: 1
-  m_fadeInDuration: 0.5
-  m_fadeInEase: 5
-  m_fadeOutDuration: 0.5
+  m_fadeInDuration: 0.2
+  m_fadeInEase: 1
+  m_fadeOutDuration: 0.35
   m_fadeOutEase: 5
 --- !u!1001 &7985465350282634352
 PrefabInstance:
