@@ -6,11 +6,18 @@ namespace IP2
     public class Clickable : MonoBehaviour
     {
         public Action OnClicked;
+
+        public Action OnHover;
         
         public Action OnHeld;
         public Action OnReleased;
 
         private bool m_held;
+
+        public void Hover()
+        {
+            OnHover?.Invoke();
+        }
 
         public void Click(bool _hold)
         {
