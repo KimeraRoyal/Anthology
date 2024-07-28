@@ -1,4 +1,3 @@
-using System;
 using DG.Tweening;
 using UnityEngine;
 using UnityEngine.Events;
@@ -20,6 +19,8 @@ namespace IP1
         [SerializeField] private float m_fadeOutTime = 1.0f;
         [SerializeField] private Ease m_fadeOutEase = Ease.Linear;
 
+        private bool m_willBeVisible;
+
         private Sequence m_sequence;
 
         public UnityEvent<bool> OnFaded;
@@ -35,11 +36,17 @@ namespace IP1
         {
             FadeInstant(m_visible);
             if(!m_fadeInOnStart) { return; }
+
+            m_visible = true;
+            m_willBeVisible = true;
             Fade(false);
         }
 
         public void Fade(bool _visible)
         {
+            if(m_willBeVisible == _visible) { return; }
+            m_willBeVisible = _visible;
+            
             if(m_sequence is { active: true }) { m_sequence.Kill(); }
             
             var time = _visible ? m_fadeOutTime : m_fadeInTime;
@@ -55,6 +62,7 @@ namespace IP1
             targetColor.a = _visible ? 1.0f : 0.0f;
 
             m_sequence = DOTween.Sequence();
+            if (Time.deltaTime < 0.001f) { m_sequence = m_sequence.SetUpdate(true); }
             m_sequence.Append(DOTween.To(() => m_image.color, _color => m_image.color = _color, targetColor, time).SetEase(ease));
             m_sequence.AppendCallback(() => FadeCallback(_visible));
         }

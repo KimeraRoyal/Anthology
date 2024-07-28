@@ -12,6 +12,7 @@ namespace Anthology
         private CanvasGroup m_group;
 
         [SerializeField] private bool m_controlChildrenEnabled;
+        [SerializeField] private bool m_ignoreTimescale;
 
         [Title("Fade In")]
         [SerializeField] private float m_fadeInDuration = 1.0f;
@@ -46,7 +47,7 @@ namespace Anthology
             var duration = _enabled ? m_fadeInDuration : m_fadeOutDuration;
             var ease = _enabled ? m_fadeInEase : m_fadeOutEase;
 
-            m_fadeSequence = DOTween.Sequence();
+            m_fadeSequence = DOTween.Sequence().SetUpdate(m_ignoreTimescale);
             m_fadeSequence.Append(DOTween.To(() => m_group.alpha, value => m_group.alpha = value, 
                 alpha, duration).SetEase(ease));
             if(_enabled) { EnableChildren(true); }

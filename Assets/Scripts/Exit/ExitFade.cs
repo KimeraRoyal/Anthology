@@ -18,7 +18,7 @@ namespace Anthology.Exit
 
             m_fade = GetComponent<Image>();
             
-            m_exit.OnTimerCounter.AddListener(OnTimerCounter);
+            //m_exit.OnTimerCounter.AddListener(OnTimerCounter);
         }
 
         private void OnTimerCounter(float _a)

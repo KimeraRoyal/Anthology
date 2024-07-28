@@ -16,6 +16,8 @@ namespace Anthology
         private IEnumerator LoadSceneWithDelay(string _scene)
         {
             if(m_delay > 0.001f) { yield return new WaitForSeconds(m_delay); }
+
+            Time.timeScale = 1.0f;
             SceneManager.LoadScene(_scene);
         }
 

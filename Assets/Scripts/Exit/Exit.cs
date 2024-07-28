@@ -1,63 +1,38 @@
-using System;
 using UnityEngine;
 using UnityEngine.Events;
-using UnityEngine.UI;
 
 namespace Anthology.Exit
 {
-    [RequireComponent(typeof(Image))]
     public class Exit : MonoBehaviour
     {
-        [SerializeField] private int m_skipFrames = 2;
-        
-        [SerializeField] private float m_closeTime = 1.0f;
-        [SerializeField] private float m_resetSpeed = 1.0f;
-        
-        private float m_timer;
-        
-        private bool m_holdingEscape;
-        private int m_skippedFrames;
+        [SerializeField] private UnityEvent OnPaused;
+        [SerializeField] private UnityEvent OnUnpaused;
 
-        public float Timer
-        {
-            get => m_timer;
-            private set
-            {
-                m_timer = value;
-                OnTimerCounter?.Invoke(m_timer / m_closeTime);
-            }
-        }
+        private bool m_paused;
         
-        public UnityEvent<float> OnTimerCounter;
-        public UnityEvent OnExit;
-
         private void Update()
         {
-            if (m_skippedFrames < m_skipFrames) // Skip X frames to avoid recognising inputs from previous scene.
+            if (Input.GetKeyDown(KeyCode.Escape))
             {
-                m_skippedFrames++;
-                return;
-            }
-
-            if (Input.GetKeyDown(KeyCode.Escape)) { m_holdingEscape = true; }
-            else if(Input.GetKeyUp(KeyCode.Escape)) { m_holdingEscape = false; }
-            
-            if(m_holdingEscape)
-            {
-                Close();
-            }
-            else
-            {
-                Timer = Mathf.Clamp(Timer - Time.deltaTime * m_resetSpeed, 0.0f, m_closeTime);
+                SetPaused(!m_paused);
             }
         }
 
-        private void Close()
-        {
-            Timer += Time.deltaTime;
-            if(Timer < m_closeTime) { return; }
+        public void Pause()
+            => SetPaused(true);
 
-            OnExit.Invoke();
+        public void Unpause()
+            => SetPaused(false);
+
+        private void SetPaused(bool _paused)
+        {
+            if(m_paused == _paused) { return; }
+            m_paused = _paused;
+
+            Time.timeScale = m_paused ? 0.0f : 1.0f;
+                
+            if(m_paused) { OnPaused?.Invoke(); }
+            else { OnUnpaused?.Invoke(); }
         }
     }
 }
