@@ -154,7 +154,7 @@ namespace FMODUnity
 
         protected override void HandleGameEvent(EmitterGameEvent gameEvent)
         {
-            if (PlayEvent == gameEvent)
+            if (PlayEvent == gameEvent && enabled)
             {
                 Play();
             }

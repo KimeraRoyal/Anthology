@@ -2,7 +2,8 @@
     "name": "IP3.Interaction.Click",
     "rootNamespace": "IP3",
     "references": [
-        "GUID:1389dd39f5b58294e840907f34af9d71"
+        "GUID:1389dd39f5b58294e840907f34af9d71",
+        "GUID:0c752da273b17c547ae705acf0f2adf2"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],
