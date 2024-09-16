@@ -10,7 +10,7 @@ namespace Anthology
         private SceneChange m_sceneChange;
         private FadeImageInOut m_fader;
 
-        private Window m_poemWindow;
+        [SerializeField] private Window m_poemWindow;
         private PoemSwitcher m_poems;
 
         private bool m_loadingGame;
@@ -24,7 +24,6 @@ namespace Anthology
             m_sceneChange = FindObjectOfType<SceneChange>();
             m_fader = FindObjectOfType<FadeImageInOut>();
             
-            m_poemWindow = FindObjectOfType<Window>();
             m_poems = FindObjectOfType<PoemSwitcher>();
 
             m_poemWindow.OnDisabled.AddListener(OnPoemWindowDisabled);

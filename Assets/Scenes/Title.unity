@@ -1038,6 +1038,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 5290723306618484712, guid: 389dc6a1fe9edf34fa903a138a2d568e, type: 3}
+      propertyPath: m_poemWindow
+      value: 
+      objectReference: {fileID: 6169503570785405463}
+    - target: {fileID: 5290723306618484712, guid: 389dc6a1fe9edf34fa903a138a2d568e, type: 3}
       propertyPath: OnGameLoaded.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1321630775}
@@ -1484,6 +1488,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6ad168bed7c61f84885858b6b24c92d1, type: 3}
+--- !u!114 &6169503570785405463 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 224408001587827069, guid: 6ad168bed7c61f84885858b6b24c92d1, type: 3}
+  m_PrefabInstance: {fileID: 6169503570785405462}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0140618d057fd5647aed02ac25923a1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6777569508016847037
 PrefabInstance:
   m_ObjectHideFlags: 0
